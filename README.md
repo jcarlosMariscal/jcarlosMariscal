@@ -6,9 +6,16 @@
 <div id="badges" align="left">
   <h3>Redes Sociales</h3>
   <a href="https://twitter.com/jc_zmar" targer="_blank">
-    <img src="https://img.shields.io/twitter/url?label=JC%20MARISCAL&logo=twitter&style=for-the-badge&url=https%3A%2F%2Ftwitter.com%2Fjc_zmar" alt="Twitter Badge" />
+    <img align="left" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="40" height="40" />
+  </a>
+    <a href="https://twitter.com/jc_zmar" targer="_blank">
+    <img align="left" src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="40" height="40" />
+  </a>
+    <a href="https://twitter.com/jc_zmar" targer="_blank">
+    <img align="left" src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="Linkedin" width="40" height="40" />
   </a>
 </div>
+<br />
 <div id="tools">
   <h3>Lenguajes:</h3>
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg" width="50" height="50" alt="HTML5" />
