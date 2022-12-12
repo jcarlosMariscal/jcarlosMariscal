@@ -8,10 +8,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     <div class="modal fade modal-con-cv" id="open-cv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-cv modal-dialog modal-lg">
         <div class="modal-content md-cv">
-          <embed src="assets/CV.pdf" type="application/pdf" class="embed-cv"/>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close</button>
-          </div>
+          <iframe src="https://jcarlosmariscal.github.io/jcarlosMariscal/assets/CV.pdf&embedded=true" style="width:100%; height:700px;" frameborder="0" ></iframe>
         </div>
       </div>
     </div>`;
