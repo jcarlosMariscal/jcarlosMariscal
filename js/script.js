@@ -9,6 +9,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
       <div class="modal-cv modal-dialog modal-lg">
         <div class="modal-content md-cv">
           <iframe src="https://jcarlosmariscal.github.io/jcarlosMariscal/assets/CV.pdf&embedded=true" style="width:100%; height:700px;" frameborder="0" ></iframe>
+
         </div>
       </div>
     </div>`;
@@ -32,7 +33,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
           <div class="modal fade bd-example-modal-lg" id="img-${id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="mt5g modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="img-web-complete" src="${imgWeb.img}"></img>
+                <img class="img-web-complete" src="${imgWeb.img}" alt="Imagen completa"></img>
               </div>
             </div>
           </div>`;
