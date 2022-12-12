@@ -2,23 +2,28 @@ const d = document,
   w = window;
 d.addEventListener("DOMContentLoaded", (e) => {
   const home_cv = d.getElementById("home-cv");
-  const open_cv = d.getElementById("open");
-  open_cv.addEventListener("click", (e) => {
-    let modal = `
-    <div class="modal fade modal-con-cv" id="open-cv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-cv modal-dialog modal-lg">
-        <div class="modal-content md-cv">
-          <iframe src="https://jcarlosmariscal.github.io/jcarlosMariscal/assets/CV.pdf&embedded=true" style="width:100%; height:700px;" frameborder="0" ></iframe>
-
-        </div>
-      </div>
-    </div>`;
-    home_cv.innerHTML += modal;
-    var openCv = new bootstrap.Modal(document.getElementById("open-cv"), {
-      keyboard: false,
-    });
-    openCv.show();
-  });
+  // const open_cv = d.getElementById("open");
+  // open_cv.addEventListener("click", (e) => {
+  //   e.preventDefault();
+  //   let modal = `
+  //   <div class="modal fade modal-con-cv" id="open-cv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  //     <div class="modal-cv modal-dialog modal-fullscreen">
+  //       <div class="modal-content md-cv">
+  //         <embed src="assets/CV.pdf" type="application/pdf" class="embed-cv"/>
+  //         <div class="modal-footer">
+  //           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+  //           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Descargar</button>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>`;
+  //   home_cv.innerHTML += modal;
+  //   var openCv = new bootstrap.Modal(document.getElementById("open-cv"), {
+  //     keyboard: false,
+  //   });
+  //   openCv.show();
+  //   // window.location.href = "index.html";
+  // });
 
   const getProjects = async () => {
     try {
@@ -33,7 +38,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
           <div class="modal fade bd-example-modal-lg" id="img-${id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="mt5g modal-dialog modal-lg">
               <div class="modal-content">
-                <img class="img-web-complete" src="${imgWeb.img}" alt="Imagen completa"></img>
+                <img class="img-web-complete" src="${imgWeb.img}"></img>
               </div>
             </div>
           </div>`;
@@ -317,12 +322,16 @@ d.addEventListener("DOMContentLoaded", (e) => {
   const body = d.getElementById("body");
   menu_btn.addEventListener("click", (e) => {
     nav_links.classList.toggle("active");
-    // body.classList.toggle("active");
+    body.classList.toggle("active");
     nav_menu.classList.toggle("active");
+    menu_btn.classList.toggle("fa-bars");
+    menu_btn.classList.toggle("fa-xmark");
   });
   nav_links.addEventListener("click", (e) => {
     nav_links.classList.toggle("active");
-    // body.classList.toggle("active");
+    body.classList.toggle("active");
     nav_menu.classList.toggle("active");
+    // menu_btn.classList.add("fa-bars");
+    // menu_btn.classList.remove("fa-xmark");
   });
 });
