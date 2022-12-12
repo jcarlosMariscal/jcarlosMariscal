@@ -8,11 +8,14 @@
   <a href="https://twitter.com/jc_zmar" targer="_blank">
     <img align="left" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="40" height="40" />
   </a>
-    <a href="https://twitter.com/jc_zmar" targer="_blank">
+    <a href="https://www.instagram.com/karlrm_16/" targer="_blank">
     <img align="left" src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="40" height="40" />
   </a>
-    <a href="https://twitter.com/jc_zmar" targer="_blank">
+    <a href="https://www.linkedin.com/in/jcarlosmariscal/" targer="_blank">
     <img align="left" src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="Linkedin" width="40" height="40" />
+  </a>
+  <a href="https://jcarlosmariscal.github.io/jcarlosMariscal/" targer="_blank">
+    <img align="left" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" alt="Web" width="40" height="40" />
   </a>
 </div>
 <br />
