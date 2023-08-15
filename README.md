@@ -32,12 +32,35 @@
 </div>
 
 ### Mis estadísticas:
-[![Hi](https://github-readme-stats.vercel.app/api/top-langs/?username=jcarlosmariscal&theme="tokyonight")](https://github.com/anuraghazra/github-readme-stats)  
 
-
-
+[![Hi](https://github-readme-stats.vercel.app/api/top-langs/?username=jcarlosmariscal&theme="tokyonight")](https://github.com/anuraghazra/github-readme-stats)
 
 <!---
 jcarlosMariscal/jcarlosMariscal is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
+<!-- # jcarlosmariscal
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/). -->
