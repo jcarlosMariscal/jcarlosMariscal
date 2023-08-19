@@ -378,11 +378,11 @@ const navbarMobile = () => (mobileNavbar.value = !mobileNavbar.value);
     transform: translateX(0);
     transition: 0.5s ease-in;
   }
-  .navbar .navbar__menu-options {
-    /* transition: all 5s ease-in; */
-    /* display: block; */
-    /* background: purple !important; */
-  }
+  /* .navbar .navbar__menu-options { */
+  /* transition: all 5s ease-in; */
+  /* display: block; */
+  /* background: purple !important; */
+  /* } */
   .navbar .navbar__menu-options .menu__option .item {
     /* transition: all 5s ease-in; */
     /* display: block; */

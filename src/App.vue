@@ -1,5 +1,6 @@
 <template>
-  <NavBar />
+  <!-- <NavBar /> -->
+  <NavBarMain />
   <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -7,9 +8,11 @@
   <!-- <router-view/> -->
 </template>
 <script setup lang="ts">
-import NavBar from "./components/NavBar.vue";
+// import NavBar from "./components/NavBar.vue";
+import NavBarMain from "./components/NavBarMain.vue";
 </script>
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 :root {
   --color-bg: #f4f4fa;
   --color-navbar-bg: #f0f0ff;
@@ -144,7 +147,9 @@ a {
 }
 html {
   background-image: url("./assets/pattern2.png");
-  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgba(212, 56, 56, 0.9); */
+  /* font-family: "Poppins", Arial, Helvetica, sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 /* #app {
