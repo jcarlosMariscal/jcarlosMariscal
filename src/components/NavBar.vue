@@ -19,9 +19,9 @@
     <div class="navbar__menu" :class="{ show: mobileNavbar }">
       <ul class="navbar__menu-options">
         <li class="menu__option">
-          <a href="" class="item"
+          <router-link to="/" class="item"
             ><i class="item-icon fa-solid fa-house"></i
-            ><span class="item-text">Inicio</span></a
+            ><span class="item-text">Inicio</span></router-link
           >
         </li>
         <li class="menu__option">
