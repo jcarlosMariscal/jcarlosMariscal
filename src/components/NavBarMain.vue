@@ -31,7 +31,7 @@
           <a href="" class="header-anim item draw">Inicio</a>
         </li>
         <li class="menu__option">
-          <a href="" class="header-anim item draw">Acerca de</a>
+          <a href="" class="header-anim item draw">Sobre mí</a>
         </li>
         <li class="menu__option">
           <a href="" class="header-anim item draw">Portafolio</a>
@@ -57,7 +57,7 @@ const changeTheme = () => {
     document.documentElement.style.setProperty("--color-bg", "#141414");
     document.documentElement.style.setProperty(
       "--navbar-bg",
-      "rgba(20, 20, 20, 0.96)"
+      "rgba(20, 20, 20, 0.988)"
     );
     document.documentElement.style.setProperty(
       "--background-image",
@@ -68,7 +68,7 @@ const changeTheme = () => {
     document.documentElement.style.setProperty("--color-bg", "#ececee");
     document.documentElement.style.setProperty(
       "--navbar-bg",
-      "rgba(236, 236, 238, 0.96)"
+      "rgba(236, 236, 238, 0.988)"
     );
     document.documentElement.style.setProperty(
       "--background-image",
@@ -88,6 +88,7 @@ const changeTheme = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--navbar-bg);
 }
 .navbar .navbar__resume {
   color: var(--color-text) !important;

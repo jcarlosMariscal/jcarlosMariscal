@@ -17,7 +17,7 @@ import NavBarMain from "./components/NavBarMain.vue";
   --color-bg: #ececee;
   --permanent-white: #ececee;
   --color-text: #141414;
-  --navbar-bg: rgba(236, 236, 238, 0.96);
+  --navbar-bg: rgba(236, 236, 238, 0.988);
   /* --color-primary: #085e3d; */
   --color-primary: #0da175;
   --color-secondary: #109bbd;
@@ -159,7 +159,6 @@ html {
   background-image: var(--background-image);
   font-family: "Poppins", sans-serif;
 }
-
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
