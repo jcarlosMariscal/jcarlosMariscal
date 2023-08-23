@@ -66,7 +66,7 @@
 }
 .aboutMe .aboutMe__content .content-name {
   /* background-color: purple; */
-  border-left: 0.5rem solid var(--color-text);
+  border-left: 0.3rem solid var(--color-text);
   padding-left: 0.8rem;
   /* position: relative; */
 }
