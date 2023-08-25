@@ -53,6 +53,10 @@ const darkModeActivated = () => {
   document.documentElement.style.setProperty("--color-text", "#ececee");
   document.documentElement.style.setProperty("--color-bg", "#141414");
   document.documentElement.style.setProperty(
+    "--color-bg-second",
+    "rgba(32, 31, 31, 0.8)"
+  );
+  document.documentElement.style.setProperty(
     "--navbar-bg",
     "rgba(20, 20, 20, 0.988)"
   );
@@ -64,6 +68,10 @@ const darkModeActivated = () => {
 const lightModeActivated = () => {
   document.documentElement.style.setProperty("--color-text", "#141414");
   document.documentElement.style.setProperty("--color-bg", "#ececee");
+  document.documentElement.style.setProperty(
+    "--color-bg-second",
+    "rgba(220, 220, 224, 0.8)"
+  );
   document.documentElement.style.setProperty(
     "--navbar-bg",
     "rgba(236, 236, 238, 0.988)"

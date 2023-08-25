@@ -66,13 +66,14 @@
 }
 .aboutMe .aboutMe__content .content-name {
   /* background-color: purple; */
-  border-left: 0.3rem solid var(--color-text);
-  padding-left: 0.8rem;
+  padding: 0.5rem 0;
+  border-left: 0.4rem solid var(--color-text);
+  padding-left: 0.5rem;
   /* position: relative; */
 }
 
 .aboutMe .aboutMe__content .content-name h3 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   /* background-color: aqua; */
   color: var(--color-text);
 }

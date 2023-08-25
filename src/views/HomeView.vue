@@ -4,6 +4,7 @@
     <!-- <hr class="custom-hr" /> -->
     <AboutMe />
     <ProjectsMain />
+    <TechnologiesMain />
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
   </div>
 </template>
@@ -12,6 +13,7 @@
 import HomeMain from "../components/HomeMain.vue";
 import AboutMe from "../components/AboutMe.vue";
 import ProjectsMain from "../components/ProjectsMain.vue";
+import TechnologiesMain from "../components/TechnologiesMain.vue";
 </script>
 <style scoped>
 .container {

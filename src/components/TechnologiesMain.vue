@@ -1,88 +1,37 @@
 <template>
-  <div class="projects">
-    <div class="projects__content">
-      <div class="content-name"><h3>Proyectos</h3></div>
+  <div class="technologies">
+    <div class="technologies__content">
+      <div class="content-name"><h3>Tecnologías y Herramientas</h3></div>
       <div class="content__cards">
-        <div class="card">
-          <div class="card__main">
-            <img
-              src="https://portfolio-miguelaeb.vercel.app/images/AluraGeek__preview.png"
-              alt=""
-            />
-            <!-- <div class="card__main-img"></div> -->
-            <div class="main-text">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                ex?
-              </p>
-            </div>
+        <!-- <h5>Desarrollo</h5> -->
+        <div class="cards">
+          <div class="card dev">
+            <img src="../assets/tech-icons/html5.png" alt="" />
+            <p>HTML</p>
           </div>
-          <!-- <div class="card__technologies">
-            <p class="technologie vue"><i class="fa-brands fa-vuejs"></i></p>
-            <p class="technologie css3">
-              <i class="fa-brands fa-css3-alt"></i>
-            </p>
-            <p class="technologie js"><i class="fa-brands fa-square-js"></i></p>
-          </div> -->
-          <div class="card__details">
-            <div class="card__detail-title">
-              <h3>Lorem ipsum dolor sit.</h3>
-            </div>
-            <div class="card__detail-options">
-              <div class="option">
-                <a href="/"><i class="fa-brands fa-github"></i></a>
-              </div>
-              <div class="option">
-                <a href="/"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/css3.png" alt="" />
+            <p>CSS</p>
           </div>
-        </div>
-        <div class="card">
-          <div class="card__main">
-            <img
-              src="https://portfolio-miguelaeb.vercel.app/images/blogr_project.png"
-              alt=""
-            />
-            <!-- <div class="card__main-img"></div> -->
-            <div class="main-text">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                ex?
-              </p>
-            </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/js.png" alt="" />
+            <p>JavaScript</p>
           </div>
-          <!-- <div class="card__technologies">
-            <p class="technologie vue">
-              <img
-                src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vue_icon_130078.png"
-                alt=""
-                width="30"
-              />
-            </p>
-            <p class="technologie firebase"><i class="bx bxl-firebase"></i></p>
-            <p class="technologie html5"><i class="fa-brands fa-html5"></i></p>
-            <p class="technologie css3">
-              <i class="fa-brands fa-css3-alt"></i>
-            </p>
-            <p class="technologie js"><i class="fa-brands fa-square-js"></i></p>
-          </div> -->
-          <div class="card__details">
-            <div class="card__detail-title">
-              <h3>Lorem ipsum dolor sit.</h3>
-            </div>
-            <div class="card__detail-options">
-              <div class="option">
-                <a href="/"><i class="fa-brands fa-github"></i></a>
-              </div>
-              <div class="option">
-                <a href="/"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/vue.png" alt="" />
+            <p>Vue JS</p>
+          </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/tailwind.png" alt="" />
+            <p>Tailwind</p>
+          </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/bootstrap.png" alt="" />
+            <p>Bootstrap</p>
+          </div>
+          <div class="card tool">
+            <img src="../assets/tech-icons/firebase.png" alt="" />
+            <p>Firebase</p>
           </div>
         </div>
       </div>
@@ -93,12 +42,12 @@
 <script lang="ts" setup></script>
 
 <style scoped>
-.projects {
+.technologies {
   width: 100%;
   min-height: 80vh;
   height: auto;
 }
-.projects__content {
+.technologies__content {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -107,7 +56,7 @@
   gap: 1rem;
   /* background: red !important; */
 }
-.projects .projects__content .content-name {
+.technologies .technologies__content .content-name {
   /* background-color: purple; */
   padding: 0.5rem 0;
   border-left: 0.4rem solid var(--color-text);
@@ -115,52 +64,82 @@
   /* position: relative; */
 }
 
-.projects .projects__content .content-name h3 {
+.technologies .technologies__content .content-name h3 {
   font-size: 1.8rem;
   /* background-color: aqua; */
   color: var(--color-text);
 }
-.content__cards {
-  /* background: aqua; */
+/* .content__cards { */
+/* text-align: center !important;
+  background: aqua;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important; */
+/* } */
+.cards {
+  /* background: red; */
+  color: var(--color-text);
   height: auto;
   padding: 1rem 0;
   width: 100% !important;
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
 }
 .card {
-  width: 400px;
-  height: auto;
+  width: 200px;
+  height: 70px;
   overflow: hidden;
   transition: transform 0.2s ease-in;
+  /* background: pink !important; */
+  background: var(--color-bg-second);
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.card.dev {
+  /* border: 1px solid var(--color-primary); */
+  /* transition: animation 0.5s ease-in; */
+  animation: cardDev 5s infinite alternate;
+}
+.card.tool {
+  /* border: 1px solid var(--color-secondary); */
+  animation: cardDev2 5s infinite alternate;
+}
+@keyframes cardDev {
+  0% {
+    border: 1px solid transparent;
+  }
+  50% {
+    border: 1px solid var(--color-primary);
+    /* box-shadow: var(--color-primary) 0px 1px 2px 0px inset; */
+  }
+  100% {
+    border: 1px solid transparent;
+  }
+}
+@keyframes cardDev2 {
+  0% {
+    border: 1px solid transparent;
+  }
+  50% {
+    border: 1px solid var(--color-secondary);
+    /* box-shadow: var(--color-secondary) 0px 1px 2px 0px inset; */
+  }
+  100% {
+    border: 1px solid transparent;
+  }
 }
 .card .card__main {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 0.3rem;
-}
-.card .card__main img {
-  border-radius: 0.3rem;
-  width: 100%;
-  height: 100%;
-}
-.card .card__main .main-text {
-  border-radius: 0.3rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 3px !important;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  /* width: 100%; */
-  /* height: 98%; */
-  transform: translateX(200%);
-  transition: transform 0.3s ease-in;
 }
 .card .card__main:hover {
   /* transform: scale(); */

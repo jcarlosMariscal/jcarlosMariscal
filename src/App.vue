@@ -17,6 +17,8 @@ import NavBarMain from "./components/NavBarMain.vue";
   --color-bg: #ececee;
   --permanent-white: #ececee;
   --color-text: #141414;
+  /* --color-text: rgba(32, 31, 31, 0.8); */
+  --color-bg-second: rgba(220, 220, 224, 0.8);
   --navbar-bg: rgba(236, 236, 238, 0.988);
   /* --color-primary: #085e3d; */
   --color-primary: #0da175;
