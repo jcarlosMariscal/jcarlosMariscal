@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects" id="proyectos">
     <div class="projects__content">
       <div class="content-name"><h3>Proyectos</h3></div>
       <div class="content__cards">

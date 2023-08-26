@@ -160,6 +160,7 @@ a {
 html {
   background-image: var(--background-image);
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

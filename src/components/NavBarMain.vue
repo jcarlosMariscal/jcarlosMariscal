@@ -28,16 +28,16 @@
     <div class="navbar__menu" :class="{ 'mobile-active': mobileNavbar }">
       <ul class="navbar__menu-options">
         <li class="menu__option">
-          <a href="" class="header-anim item draw">Inicio</a>
+          <a href="#inicio" class="header-anim item draw">Inicio</a>
         </li>
         <li class="menu__option">
-          <a href="" class="header-anim item draw">Sobre mí</a>
+          <a href="#sobre-mi" class="header-anim item draw">Sobre mí</a>
         </li>
         <li class="menu__option">
-          <a href="" class="header-anim item draw">Portafolio</a>
+          <a href="#proyectos" class="header-anim item draw">Proyectos</a>
         </li>
         <li class="menu__option">
-          <a href="" class="header-anim item draw">Contacto</a>
+          <a href="#contacto" class="header-anim item draw">Contacto</a>
         </li>
       </ul>
     </div>

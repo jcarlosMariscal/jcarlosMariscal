@@ -1,5 +1,5 @@
 <template>
-  <div class="home__main">
+  <div class="home__main" id="inicio">
     <div class="main__content">
       <div class="main__content-avatar">
         <img src="https://i.stack.imgur.com/QQcdg.png" alt="Avatar" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutMe">
+  <div class="aboutMe" id="sobre-mi">
     <div class="aboutMe__content">
       <div class="content-name"><h3>Sobre Mí</h3></div>
       <div class="content__information">
