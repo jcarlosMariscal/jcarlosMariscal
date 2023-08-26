@@ -75,38 +75,6 @@
   display: flex;
   gap: 1rem;
 }
-.btn {
-  background: transparent;
-  border: 1px solid var(--color-primary) !important;
-  color: var(--color-text);
-  border: none;
-  padding: 0.8rem 1.2rem;
-  width: 8rem;
-  border-radius: 0.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.2s ease-in;
-  cursor: pointer;
-  background-image: linear-gradient(
-    to left,
-    transparent,
-    transparent 50%,
-    var(--color-primary) 50%,
-    var(--color-primary)
-  );
-  background-position: 100% 0;
-  background-size: 200% 100%;
-  transition: all 0.25s ease-in;
-}
-.btn:hover {
-  background-position: 0 0;
-  /* color: #333; */
-  color: var(--permanent-white);
-  transition: all 0.2s ease-in;
-}
 
 .btn-cv {
   border: 1px solid var(--color-secondary) !important;
