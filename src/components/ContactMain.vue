@@ -72,18 +72,65 @@
 // import { emailjs } from "node_modules/@emailjs/browser/";
 // import emailjs from "";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 import { ref } from "vue";
-// emailjs.init("HHXsVlRzUR8mgNu96");
 const form = ref();
+console.log(process.env.VUE_APP_TEMPLATE_ID);
+console.log(process.env.VUE_APP_PUBLIC_KEY);
+
 const sendEmail = () => {
-  emailjs.sendForm("service_h53mf6k", "template_u5l7k3q", form.value).then(
-    (result) => {
-      console.log("SUCCESS!", result.text);
-    },
-    (error) => {
-      console.log("FAILED...", error.text);
-    }
-  );
+  emailjs
+    .sendForm(
+      process.env.VUE_APP_SERVICE_ID,
+      process.env.VUE_APP_TEMPLATE_ID,
+      form.value,
+      process.env.VUE_APP_PUBLIC_KEY
+    )
+    .then(
+      (result) => {
+        console.log("SUCCESS!", result.text);
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          customClass: {
+            popup: "my-toast-popup",
+            title: "my-toast-title",
+          },
+          // timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+          },
+        });
+
+        Toast.fire({
+          icon: "success",
+          title: "El correo se ha enviado!!!",
+          iconColor: "#0da175",
+        });
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          // timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+          },
+        });
+
+        Toast.fire({
+          icon: "error",
+          title: "Ha ocurrido un error, por favor intente de nuevo más tarde.",
+        });
+      }
+    );
 };
 </script>
 
@@ -355,4 +402,5 @@ html .form__label2 {
   user-select: none;
   pointer-events: none;
 }
+/* Cambiar el fondo y el texto de la alerta */
 </style>

@@ -58,7 +58,7 @@ const darkModeActivated = () => {
   );
   document.documentElement.style.setProperty(
     "--navbar-bg",
-    "rgba(20, 20, 20, 0.988)"
+    "rgba(20, 20, 20, 0.8)"
   );
   document.documentElement.style.setProperty(
     "--background-image",
@@ -74,7 +74,7 @@ const lightModeActivated = () => {
   );
   document.documentElement.style.setProperty(
     "--navbar-bg",
-    "rgba(236, 236, 238, 0.988)"
+    "rgba(236, 236, 238, 0.8)"
   );
   document.documentElement.style.setProperty(
     "--background-image",

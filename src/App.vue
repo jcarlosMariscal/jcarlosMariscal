@@ -19,7 +19,7 @@ import NavBarMain from "./components/NavBarMain.vue";
   --color-text: #141414;
   /* --color-text: rgba(32, 31, 31, 0.8); */
   --color-bg-second: rgba(220, 220, 224, 0.8);
-  --navbar-bg: rgba(236, 236, 238, 0.988);
+  --navbar-bg: rgba(236, 236, 238, 0.8);
   /* --color-primary: #085e3d; */
   --color-primary: #0da175;
   --color-secondary: #109bbd;
@@ -181,4 +181,15 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 } */
+.my-toast-popup {
+  background-color: var(
+    --color-bg
+  ) !important; /* Cambia el color de fondo que desees */
+}
+
+.my-toast-title {
+  color: var(
+    --color-text
+  ) !important; /* Cambia el color del texto que desees */
+}
 </style>
