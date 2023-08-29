@@ -97,6 +97,18 @@
   width: 100%;
   min-height: 80vh;
   height: auto;
+  padding-top: 5rem;
+  position: relative;
+}
+.projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-text);
+  opacity: 0.3;
 }
 .projects__content {
   height: 100%;

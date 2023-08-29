@@ -4,7 +4,7 @@
       <div class="content-name"><h3>Contacto</h3></div>
       <div class="content-main">
         <div class="contact__avatar">
-          <img src="https://i.stack.imgur.com/QQcdg.png" alt="Avatar" />
+          <img src="../assets/contact-avatar.webp" alt="Avatar" />
         </div>
         <div class="contact__form">
           <!-- <form action="" class="form2">
