@@ -40,7 +40,7 @@
           </p>
         </div>
         <div class="information-avatar">
-          <img src="https://i.stack.imgur.com/QQcdg.png" alt="Avatar" />
+          <img src="../assets/about-avatar.webp" alt="Avatar" />
         </div>
       </div>
     </div>
@@ -52,8 +52,21 @@
 <style scoped>
 .aboutMe {
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   height: auto;
+  /* background: pink; */
+  padding-top: 5rem;
+  position: relative;
+}
+.aboutMe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-text);
+  opacity: 0.3;
 }
 .aboutMe__content {
   height: 100%;
@@ -84,6 +97,7 @@
   justify-content: center;
 }
 .content__information .information-text {
+  width: 60%;
   color: var(--color-text);
 }
 .content__information .information-text h4 {
@@ -91,7 +105,7 @@
   line-height: 2.5rem;
 }
 .content__information .information-text p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin: 1rem 0;
   font-weight: normal !important;
@@ -103,6 +117,20 @@ span.learned {
 span.learning {
   color: var(--color-secondary);
 }
+.content__information .information-avatar {
+  /* background: aqua; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content__information .information-avatar img {
+  /* background: purple; */
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(-60px);
+}
 @media screen and (max-width: 1000px) {
   .content__information {
     /* height: 100%; */
@@ -113,11 +141,30 @@ span.learning {
     /* gap: 1rem; */
     /* background: red !important; */
   }
+  .content__information .information-text {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content__information .information-avatar {
+    /* background: aqua; */
+    width: 60%;
+  }
 }
 @media screen and (max-width: 700px) {
+  .content__information .information-text {
+    width: 100%;
+  }
   .content__information {
     /* width: 100%; */
     padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .content__information .information-avatar {
+    /* background: aqua; */
+    margin-top: 2rem;
+    width: 90%;
   }
 }
 </style>

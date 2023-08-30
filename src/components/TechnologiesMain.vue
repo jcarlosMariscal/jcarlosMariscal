@@ -1,7 +1,7 @@
 <template>
-  <div class="technologies">
+  <div class="technologies" id="tecnologias">
     <div class="technologies__content">
-      <div class="content-name"><h3>Tecnologías y Herramientas</h3></div>
+      <div class="content-name"><h3>Tecnologías</h3></div>
       <div class="content__cards">
         <!-- <h5>Desarrollo</h5> -->
         <div class="cards">
@@ -29,6 +29,8 @@
             <img src="../assets/tech-icons/bootstrap.png" alt="" />
             <p>Bootstrap</p>
           </div>
+        </div>
+        <div class="cards">
           <div class="card tool">
             <img src="../assets/tech-icons/firebase.png" alt="" />
             <p>Firebase</p>
@@ -44,8 +46,21 @@
 <style scoped>
 .technologies {
   width: 100%;
-  min-height: 80vh;
+  min-height: 50vh;
   height: auto;
+  padding-top: 5rem;
+  position: relative;
+  /* background-color: aqua; */
+}
+.technologies::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-text);
+  opacity: 0.3;
 }
 .technologies__content {
   height: 100%;
@@ -361,21 +376,9 @@
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 1000px) {
-  .content__information {
-    /* height: 100%; */
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center;
-    justify-content: center;
-    /* gap: 1rem; */
-    /* background: red !important; */
-  }
-}
-@media screen and (max-width: 700px) {
-  .content__information {
-    /* width: 100%; */
-    padding: 0 2rem;
+@media screen and (max-width: 440px) {
+  .card {
+    width: 100%;
   }
 }
 </style>

@@ -37,6 +37,9 @@
           <a href="#proyectos" class="header-anim item draw">Proyectos</a>
         </li>
         <li class="menu__option">
+          <a href="#tecnologias" class="header-anim item draw">Tecnologías</a>
+        </li>
+        <li class="menu__option">
           <a href="#contacto" class="header-anim item draw">Contacto</a>
         </li>
       </ul>
@@ -52,33 +55,19 @@ const mobileNavbar = ref(false);
 const darkModeActivated = () => {
   document.documentElement.style.setProperty("--color-text", "#ececee");
   document.documentElement.style.setProperty("--color-bg", "#141414");
-  document.documentElement.style.setProperty(
-    "--color-bg-second",
-    "rgba(32, 31, 31, 0.8)"
-  );
+  document.documentElement.style.setProperty("--color-bg-second", "#181717");
   document.documentElement.style.setProperty(
     "--navbar-bg",
     "rgba(20, 20, 20, 0.8)"
-  );
-  document.documentElement.style.setProperty(
-    "--background-image",
-    `url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='30' height='30' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 8%, 1)'/><path d='M9 20.502h0A7.5 7.5 0 0 1 1.5 28 7.5 7.5 0 0 0-6 35.5h0a7.5 7.5 0 0 1-7.5 7.499 7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1-21 35.5h0a7.5 7.5 0 0 1 7.5-7.5A7.5 7.5 0 0 0-6 20.502h0a7.5 7.5 0 1 1 15 0zm15 0h0A7.5 7.5 0 0 1 16.5 28a7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1 9 20.502h0c0-2.072-.84-3.947-2.197-5.303A7.477 7.477 0 0 0 1.5 13.002a7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1-6 5.503h0a7.5 7.5 0 1 1 15 0h0c0 2.07.84 3.945 2.196 5.303a7.476 7.476 0 0 0 5.304 2.196c2.07 0 3.945.84 5.303 2.197A7.471 7.471 0 0 1 24 20.502zm15 0h0A7.5 7.5 0 0 1 31.5 28a7.5 7.5 0 0 0-7.5 7.5h0a7.5 7.5 0 0 1-7.5 7.499 7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1 9 35.5h0a7.5 7.5 0 0 1 7.5-7.5 7.5 7.5 0 0 0 7.5-7.498h0a7.5 7.5 0 1 1 15 0zm0-30h0A7.5 7.5 0 0 1 31.5-2 7.5 7.5 0 0 0 24 5.5h0a7.5 7.5 0 0 1-7.5 7.499 7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1 9 5.5h0A7.5 7.5 0 0 1 16.5-2 7.5 7.5 0 0 0 24-9.498h0a7.5 7.5 0 1 1 15 0zm-22.5 37.5a7.5 7.5 0 0 0-7.5 7.5c0-2.072-.84-3.947-2.197-5.303A7.477 7.477 0 0 0 1.5 28.002 7.5 7.5 0 0 0 9 20.503c0 2.07.84 3.945 2.196 5.303a7.476 7.476 0 0 0 5.304 2.196zm15-15a7.5 7.5 0 0 0-7.5 7.5c0-2.072-.84-3.947-2.197-5.303a7.477 7.477 0 0 0-5.303-2.197A7.5 7.5 0 0 0 24 5.503c0 2.07.84 3.945 2.196 5.303a7.476 7.476 0 0 0 5.304 2.196z'  stroke-width='1.5' stroke='hsla(126, 23%, 49%, 0.01)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")`
   );
 };
 const lightModeActivated = () => {
   document.documentElement.style.setProperty("--color-text", "#141414");
   document.documentElement.style.setProperty("--color-bg", "#ececee");
-  document.documentElement.style.setProperty(
-    "--color-bg-second",
-    "rgba(220, 220, 224, 0.8)"
-  );
+  document.documentElement.style.setProperty("--color-bg-second", "#e8e8f8");
   document.documentElement.style.setProperty(
     "--navbar-bg",
     "rgba(236, 236, 238, 0.8)"
-  );
-  document.documentElement.style.setProperty(
-    "--background-image",
-    `url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='30' height='30' patternTransform='scale(3) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 6%, 93%, 1)'/><path d='M9 20.502h0A7.5 7.5 0 0 1 1.5 28 7.5 7.5 0 0 0-6 35.5h0a7.5 7.5 0 0 1-7.5 7.499 7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1-21 35.5h0a7.5 7.5 0 0 1 7.5-7.5A7.5 7.5 0 0 0-6 20.502h0a7.5 7.5 0 1 1 15 0zm15 0h0A7.5 7.5 0 0 1 16.5 28a7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1 9 20.502h0c0-2.072-.84-3.947-2.197-5.303A7.477 7.477 0 0 0 1.5 13.002a7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1-6 5.503h0a7.5 7.5 0 1 1 15 0h0c0 2.07.84 3.945 2.196 5.303a7.476 7.476 0 0 0 5.304 2.196c2.07 0 3.945.84 5.303 2.197A7.471 7.471 0 0 1 24 20.502zm15 0h0A7.5 7.5 0 0 1 31.5 28a7.5 7.5 0 0 0-7.5 7.5h0a7.5 7.5 0 0 1-7.5 7.499 7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1 9 35.5h0a7.5 7.5 0 0 1 7.5-7.5 7.5 7.5 0 0 0 7.5-7.498h0a7.5 7.5 0 1 1 15 0zm0-30h0A7.5 7.5 0 0 1 31.5-2 7.5 7.5 0 0 0 24 5.5h0a7.5 7.5 0 0 1-7.5 7.499 7.476 7.476 0 0 1-5.304-2.196A7.482 7.482 0 0 1 9 5.5h0A7.5 7.5 0 0 1 16.5-2 7.5 7.5 0 0 0 24-9.498h0a7.5 7.5 0 1 1 15 0zm-22.5 37.5a7.5 7.5 0 0 0-7.5 7.5c0-2.072-.84-3.947-2.197-5.303A7.477 7.477 0 0 0 1.5 28.002 7.5 7.5 0 0 0 9 20.503c0 2.07.84 3.945 2.196 5.303a7.476 7.476 0 0 0 5.304 2.196zm15-15a7.5 7.5 0 0 0-7.5 7.5c0-2.072-.84-3.947-2.197-5.303a7.477 7.477 0 0 0-5.303-2.197A7.5 7.5 0 0 0 24 5.503c0 2.07.84 3.945 2.196 5.303a7.476 7.476 0 0 0 5.304 2.196z'  stroke-width='1.5' stroke='hsla(126, 23%, 49%, 0.02)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")`
   );
 };
 onMounted(() => {
@@ -106,11 +95,12 @@ const changeTheme = () => {
   height: 4rem;
   position: sticky;
   top: 0;
-  transition: all 0.5s ease-in;
+  /* transition: all 0.5s ease-in; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--navbar-bg);
+  z-index: 999;
 }
 .navbar .navbar__resume {
   color: var(--color-text) !important;
@@ -287,10 +277,10 @@ const changeTheme = () => {
   border-top-color: var(--color-primary);
   transition: width 0.15s ease-out, height 0.25s ease-out 0.0001s;
 }
-.draw:hover::after {
-  /* border-bottom-color: var(--color-primary); */
-  /* border-left-color: var(--color-secondary); */
-  /* transition: border-color 0s ease-out 0.5s, width 0.15s ease-out 0.5s, */
-  /* height 0.25s ease-out 0.75s; */
-}
+/* .draw:hover::after { */
+/* border-bottom-color: var(--color-primary); */
+/* border-left-color: var(--color-secondary); */
+/* transition: border-color 0s ease-out 0.5s, width 0.15s ease-out 0.5s, */
+/* height 0.25s ease-out 0.75s; */
+/* } */
 </style>

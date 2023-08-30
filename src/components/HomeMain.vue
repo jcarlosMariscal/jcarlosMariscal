@@ -1,8 +1,33 @@
 <template>
   <div class="home__main" id="inicio">
     <div class="main__content">
-      <div class="main__content-avatar">
-        <img src="https://i.stack.imgur.com/QQcdg.png" alt="Avatar" />
+      <!-- <div v-for="(avatar, index) in avatars" :key="index" class="avatar-container">
+      <img :src="avatar.url" :alt="avatar.name" @mouseenter="changeAvatar(index)" @mouseleave="resetAvatar(index)">
+    </div> -->
+      <div
+        class="main__content-avatar"
+        :class="{ hover: avatarHover, normal: !avatarHover }"
+      >
+        <img
+          class="home-avatar"
+          :class="{ hover: avatarHover, normal: !avatarHover }"
+          :src="avatar.url"
+          alt="{{ avatar.name }}"
+          @mouseenter="changeAvatar()"
+          @mouseleave="resetAvatar()"
+        />
+        <!-- <img
+          v-if="hoveredIndex === index"
+          :src="avatar.url"
+          :alt="avatar.name"
+          @mouseleave="resetAvatar(index)"
+        /> -->
+        <!-- <img
+          v-else
+          :src="avatar.url"
+          :alt="avatar.name"
+          @mouseenter="changeAvatar(index)"
+        /> -->
       </div>
       <div class="main__content-resume">
         <h1 class="resume__title">
@@ -25,30 +50,63 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { Ref, ref } from "vue";
+
+const avatarHover: Ref<boolean> = ref(false);
+const avatar = ref({
+  name: "Avatar 1",
+  url: require("../assets/greeting-avatar.webp"),
+});
+const changeAvatar = () => {
+  avatar.value.url = require("../assets/greeting-avatar2.webp");
+  avatarHover.value = true;
+};
+const resetAvatar = () => {
+  avatar.value.url = require("../assets/greeting-avatar.webp");
+  avatarHover.value = false;
+};
+</script>
 
 <style scoped>
 .home__main {
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   height: auto;
+  /* background: aquamarine; */
+  display: flex;
+  align-items: center;
 }
 .home__main .main__content {
   height: 100%;
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   gap: 1rem;
+  /* background-color: aqua; */
 }
 .main__content-avatar {
   width: 35%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 5s ease-in;
+  /* background: purple; */
 }
-.main__content-avatar img {
-  width: 100%;
+.main__content-avatar .home-avatar {
+  /* background-color: aqua; */
+  transform: rotateY(180deg);
+  width: 80%;
   height: 100%;
   object-fit: cover;
+}
+.main__content-avatar .home-avatar.hover {
+  /* transform: ; */
+  /* transition: all 0.00000001s ease-in; */
+  transform: scale(1.2) translateY(-30px) rotateY(180deg);
+}
+.home-avatar:hover {
+  /* transition: all 5s ease-in; */
 }
 .main__content-resume {
   width: 50%;
@@ -114,6 +172,9 @@
   }
   .main__content-resume {
     width: 95%;
+  }
+  .resume__btns {
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 700px) {
@@ -242,5 +303,13 @@
   -moz-animation: secondary 3s infinite;
   -o-animation: secondary 3s infinite;
   animation: secondary 3s infinite;
+}
+@media screen and (max-width: 400px) {
+  .resume__btns {
+    flex-direction: column;
+  }
+  .resume__btns .btn {
+    width: 100%;
+  }
 }
 </style>
