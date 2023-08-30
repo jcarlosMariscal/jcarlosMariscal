@@ -37,6 +37,9 @@
           <a href="#proyectos" class="header-anim item draw">Proyectos</a>
         </li>
         <li class="menu__option">
+          <a href="#tecnologias" class="header-anim item draw">Tecnologías</a>
+        </li>
+        <li class="menu__option">
           <a href="#contacto" class="header-anim item draw">Contacto</a>
         </li>
       </ul>

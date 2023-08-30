@@ -6,16 +6,19 @@
     <router-link to="/about">About</router-link>
   </nav> -->
   <router-view />
+  <FooterMain />
 </template>
 <script setup lang="ts">
 // import NavBar from "./components/NavBar.vue";
 import NavBarMain from "./components/NavBarMain.vue";
+import FooterMain from "./components/FooterMain.vue";
 </script>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 :root {
   --color-bg: #ececee;
   --permanent-white: #ececee;
+  --permanent-dark: #141414;
   --color-text: #141414;
   --color-bg-second: #e8e8f8;
   --navbar-bg: rgba(236, 236, 238, 0.8);
@@ -26,6 +29,7 @@ import NavBarMain from "./components/NavBarMain.vue";
     var(--color-primary),
     var(--color-secondary)
   );
+  --font-family: "Poppins", sans-serif;
 }
 html,
 body,
@@ -155,7 +159,7 @@ a {
   text-decoration: none;
 }
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
@@ -198,5 +202,25 @@ nav a.router-link-exact-active {
   color: var(
     --color-text
   ) !important; /* Cambia el color del texto que desees */
+}
+::-webkit-scrollbar {
+  width: 10px;
+  pad: 2px;
+}
+
+::-webkit-scrollbar-track {
+  /* width: 15px; */
+  background: var(--color-bg);
+  /* -webkit-border-radius: 10px; */
+  /* border-radius: 10px; */
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--color-text);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-secondary);
 }
 </style>

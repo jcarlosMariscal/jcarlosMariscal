@@ -52,7 +52,7 @@
 <style scoped>
 .aboutMe {
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   height: auto;
   /* background: pink; */
   padding-top: 5rem;
@@ -105,7 +105,7 @@
   line-height: 2.5rem;
 }
 .content__information .information-text p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin: 1rem 0;
   font-weight: normal !important;
@@ -141,11 +141,30 @@ span.learning {
     /* gap: 1rem; */
     /* background: red !important; */
   }
+  .content__information .information-text {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content__information .information-avatar {
+    /* background: aqua; */
+    width: 60%;
+  }
 }
 @media screen and (max-width: 700px) {
+  .content__information .information-text {
+    width: 100%;
+  }
   .content__information {
     /* width: 100%; */
     padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .content__information .information-avatar {
+    /* background: aqua; */
+    margin-top: 2rem;
+    width: 90%;
   }
 }
 </style>

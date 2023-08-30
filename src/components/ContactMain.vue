@@ -7,19 +7,6 @@
           <img src="../assets/contact-avatar.webp" alt="Avatar" />
         </div>
         <div class="contact__form">
-          <!-- <form action="" class="form2">
-            <div class="form__input">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                class="input__name form__input2"
-                required
-              />
-              <label for="name" class="form__label2">Nombre</label>
-            </div>
-          </form> -->
           <form id="form" class="form" ref="form" @submit.prevent="sendEmail">
             <div class="form__input">
               <input
@@ -29,6 +16,7 @@
                 placeholder="Name"
                 class="input__name form__input2"
                 required
+                autocomplete="off"
               />
               <label for="name" class="form__label2">Nombre</label>
             </div>
@@ -41,6 +29,7 @@
                 placeholder="Escriba su correo electrónico"
                 pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                 required
+                autocomplete="off"
               />
               <label for="email" class="form__label2">Correo</label>
             </div>
@@ -53,13 +42,19 @@
                 placeholder="Escriba su correo electrónico"
                 pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                 required
+                autocomplete="off"
               ></textarea>
               <label for="email" class="form__label2 label-textarea"
                 >Escriba su mensaje</label
               >
             </div>
             <div class="form__btn">
-              <input type="submit" id="form-btn" class="btn" value="Enviar" />
+              <input
+                type="submit"
+                id="form-btn"
+                class="btn btn-send"
+                value="Enviar"
+              />
             </div>
           </form>
         </div>
@@ -139,6 +134,20 @@ const sendEmail = () => {
   width: 100%;
   min-height: 80vh;
   height: auto;
+  padding-top: 5rem;
+  position: relative;
+  /* margin-bottom: rem; */
+  /* background-color: pink; */
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-text);
+  opacity: 0.3;
 }
 .contact__content {
   height: 100%;
@@ -170,20 +179,23 @@ const sendEmail = () => {
   justify-content: center;
 }
 .content-main .contact__avatar {
-  /* background: pink; */
+  /* background: purple; */
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .contact__avatar img {
-  width: 100%;
+  /* background: purple; */
+  width: 65%;
+  transform: translateY(-40px);
 }
 /* .content-main .contact__avatar {
   width: 50%;
 } */
 /* CONTACT */
 .contact__form {
+  /* background: orange; */
   /* background-image: linear-gradient(#deebf7, #269c5f); */
   /* background-color: var(--main-color); */
   /* background: orange !important; */
@@ -194,15 +206,23 @@ const sendEmail = () => {
   /* padding: 70px 10vw 20px 10vw; */
   /* margin-bottom: 70px; */
   margin: 1px auto;
+  padding: 0 0.5rem;
 }
 @media screen and (max-width: 800px) {
   .content-main {
     flex-direction: column;
   }
   .contact__avatar {
-    width: 40% !important;
+    background: aqua;
+    width: 60% !important;
   }
   .contact__form {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact__avatar {
+    background: aqua;
     width: 80% !important;
   }
 }
@@ -236,13 +256,16 @@ const sendEmail = () => {
 .input__email {
   /* margin-bottom: 40px; */
   /* background-color: aqua; */
+  font-family: var(--font-family);
   box-sizing: border-box;
-  background-color: transparent;
+  /* background: var(--color-bg) !important; */
+  /* background: transparent; */
   width: 100%;
   height: 1.5rem;
   font-size: 16px;
   border: 0;
   margin: 1rem 0;
+  padding: 1rem;
   /* padding: 10px 10px 0px 10px; */
   border: 1px solid var(--color-text);
   border-radius: 0.3rem !important;
@@ -252,6 +275,14 @@ const sendEmail = () => {
 .input__name::placeholder,
 .input__email::placeholder {
   color: rgba(255, 255, 255, 0.8);
+}
+.textarea__message {
+  box-sizing: border-box;
+  /* background-color: aqua !important; */
+  width: 100% !important;
+  padding: 1rem;
+  font-size: 1rem !important;
+  font-weight: normal !important;
 }
 .textarea__message::placeholder {
   color: var(--main-color);
@@ -273,6 +304,7 @@ const sendEmail = () => {
   font-size: 16px;
   /* padding: 10px; */
   font-family: var(--font-family);
+  border-radius: 0.3rem;
   color: var(--main-color);
   outline: none;
   resize: none;
@@ -285,26 +317,12 @@ const sendEmail = () => {
 
 .form__btn {
   text-align: center;
+  /* background-color: aqua; */
+  width: 60%;
   /* margin-top: 10px; */
 }
 .btn-send {
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 16px;
-  width: 50%;
-  border: 0;
-  background-color: #269c5f;
-  color: var(--white-color);
-  cursor: pointer;
-}
-.btn-send:hover {
-  transition: all 0.5s ease-in-out;
-  background-color: #fff;
-  color: var(--main-color);
-}
-
-.description__fecha {
-  font-weight: bold;
+  width: 100%;
 }
 
 html .form__input2 {
@@ -312,7 +330,7 @@ html .form__input2 {
   /* width: 100%; */
   height: 2.5rem;
   /* padding: 0 1.25rem; */
-  background: #303030;
+  background: var(--color-bg);
   /* border: 1px solid #303030; */
   border: none;
   /* margin: 0.625rem auto; */
@@ -329,21 +347,26 @@ html .form__input2 {
     width: clamp(120px, 35vw, 420px);
   } */
 }
+html .form__input2 {
+  /* background: var(--navbar-bg); */
+  border: 2px solid var(--color-text);
+}
 html .form__input2:focus {
   outline: none;
   border: none;
-  background: rgba(48, 48, 48, 0.3);
+  background: rgba(48, 48, 48, 0.2);
   border-radius: 0% !important;
   border-top-left-radius: 0.3rem !important;
   border-top-right-radius: 0.3rem !important;
-  border-bottom: 1px solid var(--color-secondary);
+  border-bottom: 2px solid var(--color-secondary);
 }
 html .form__input2:focus + .form__label2,
 html .form__input2:not(:placeholder-shown) + .form__label2 {
   transform: translateY(-4rem) scale(1);
   background: var(--color-secondary);
-  color: var(--color-text);
+  color: var(--permanent-white);
   border-radius: 0.1rem;
+  font-weight: normal;
 
   /* padding: 0.1rem 0.3rem; */
   margin: 0 1rem;
@@ -353,7 +376,8 @@ html .form__input2:not(:placeholder-shown) + .form__label2 {
 }
 html .form__input2:focus + .form__label2.label-textarea,
 html .form__input2:not(:placeholder-shown) + .form__label2.label-textarea {
-  transform: translateY(-10.3rem) scale(1) !important;
+  /* transform: translateY(-12.2rem) scale(1) !important; */
+  transform: translateY(-1000%) scale(1) !important;
 }
 html .form__input2::placeholder {
   display: none;
@@ -366,7 +390,18 @@ html .form__input2::placeholder {
   /* Standard syntax */
 }
 html .form__input2:not(:placeholder-shown) {
-  border-top-color: rgba(0, 0, 0, 0.5);
+  /* border-top-color: rgba(0, 0, 0, 0.5); */
+  outline: none;
+  border: none;
+  background: rgba(48, 48, 48, 0.2);
+  border-radius: 0% !important;
+  border-top-left-radius: 0.3rem !important;
+  border-top-right-radius: 0.3rem !important;
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+html .form__input2:not(:placeholder-shown) + .form__label2 {
+  background: var(--color-primary);
 }
 html .form__label2 {
   font-size: 1rem;
@@ -403,4 +438,18 @@ html .form__label2 {
   pointer-events: none;
 }
 /* Cambiar el fondo y el texto de la alerta */
+
+@media screen and (max-width: 700px) {
+  .form__btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .contact__avatar {
+    display: none !important;
+  }
+  .contact__form {
+    width: 100% !important;
+  }
+}
 </style>

@@ -71,7 +71,7 @@ const resetAvatar = () => {
 <style scoped>
 .home__main {
   width: 100%;
-  min-height: 80vh;
+  min-height: 70vh;
   height: auto;
   /* background: aquamarine; */
   display: flex;
@@ -172,6 +172,9 @@ const resetAvatar = () => {
   }
   .main__content-resume {
     width: 95%;
+  }
+  .resume__btns {
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 700px) {
@@ -300,5 +303,13 @@ const resetAvatar = () => {
   -moz-animation: secondary 3s infinite;
   -o-animation: secondary 3s infinite;
   animation: secondary 3s infinite;
+}
+@media screen and (max-width: 400px) {
+  .resume__btns {
+    flex-direction: column;
+  }
+  .resume__btns .btn {
+    width: 100%;
+  }
 }
 </style>
