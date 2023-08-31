@@ -1,0 +1,184 @@
+[
+  {
+    "title": "Rami'z Pizza",
+    "description": "Sitio web para mostrar información de los precios y especialidades de una pizzería. Permite personalizar los precios, promociones, especialidades, etc. mediante un CRUD de forma rápida y sencilla.",
+    "image": "biblioteca.jpg",
+    "date": "- Agosto 2023",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-brands fa-github'></i>"
+      },
+      {
+        "name": "Site",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-solid fa-arrow-up-right-from-square'></i>"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
+      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
+      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+    ],
+    "isActive": false,
+    "developing": true
+  },
+  {
+    "title": "Rami'z Pizza",
+    "description": "Sitio web para mostrar información de los precios y especialidades de una pizzería. Permite personalizar los precios, promociones, especialidades, etc. mediante un CRUD de forma rápida y sencilla.",
+    "image": "ramiz.png",
+    "date": "- Agosto 2023",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-brands fa-github'></i>"
+      },
+      {
+        "name": "Site",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-solid fa-arrow-up-right-from-square'></i>"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
+      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
+      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+    ],
+    "isActive": false,
+    "developing": false
+  },
+  {
+    "title": "Apga Bliss",
+    "description": "Apga Bliss es una aplicación que permite gestionar los gastos personales para una mejor toma de decisiones sobre los ingresos, integra diferentes librerías para ayudar con la gestión, como la selección de íconos e íconos para las categorías, gráficas e inicio de sesión con Google.",
+    "image": "apga-bliss.png",
+    "date": "- Agosto 2023",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-brands fa-github'></i>"
+      },
+      {
+        "name": "Site",
+        "url": "https://apga-bliss.infinityfreeapp.com/ ",
+        "icon": "<i class='fa-solid fa-arrow-up-right-from-square'></i>"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
+      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
+      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+    ],
+    "isActive": false,
+    "developing": false
+  },
+  {
+    "title": "Gestor de cursos",
+    "description": "Proyecto realizado con VUE para ayudar en la gestión de cursos, fue desarrollado para poner en práctica Vue. Se integraron funcionalidades como un inicio de sesión con email/password y Google a través de Firebase y un CRUD para gestionar Estudiantes, Materias y Calificaciones.",
+    "image": "gestor-cursos.png",
+    "date": "- Agosto 2023",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-brands fa-github'></i>"
+      },
+      {
+        "name": "Site",
+        "url": "https://apga-bliss.infinityfreeapp.com/ ",
+        "icon": "<i class='fa-solid fa-arrow-up-right-from-square'></i>"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
+      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
+      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+    ],
+    "isActive": false,
+    "developing": false
+  },
+  {
+    "title": "Conversor de Monedas",
+    "description": "Proyecto realizado con VUE para ayudar en la gestión de cursos, fue desarrollado para poner en práctica Vue. Se integraron funcionalidades como un inicio de sesión con email/password y Google a través de Firebase y un CRUD para gestionar Estudiantes, Materias y Calificaciones.",
+    "image": "conversor-monedas.png",
+    "date": "- Agosto 2023",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-brands fa-github'></i>"
+      },
+      {
+        "name": "Site",
+        "url": "https://conversormonedasjc.netlify.app/ ",
+        "icon": "<i class='fa-solid fa-arrow-up-right-from-square'></i>"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
+      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
+      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+    ],
+    "isActive": false,
+    "developing": false
+  },
+  {
+    "title": "Easy Sale",
+    "description": "Proyecto realizado con VUE para ayudar en la gestión de cursos, fue desarrollado para poner en práctica Vue. Se integraron funcionalidades como un inicio de sesión con email/password y Google a través de Firebase y un CRUD para gestionar Estudiantes, Materias y Calificaciones.",
+    "image": "easy-sale.png",
+    "date": "- Agosto 2023",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-brands fa-github'></i>"
+      },
+      {
+        "name": "Site",
+        "url": "https://apga-bliss.infinityfreeapp.com/ ",
+        "icon": "<i class='fa-solid fa-arrow-up-right-from-square'></i>"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
+      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
+      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+    ],
+    "isActive": false,
+    "developing": false
+  },
+  {
+    "title": "Agricultura",
+    "description": "Proyecto realizado con VUE para ayudar en la gestión de cursos, fue desarrollado para poner en práctica Vue. Se integraron funcionalidades como un inicio de sesión con email/password y Google a través de Firebase y un CRUD para gestionar Estudiantes, Materias y Calificaciones.",
+    "image": "agricultura.png",
+    "date": "- Agosto 2023",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "icon": "<i class='fa-brands fa-github'></i>"
+      },
+      {
+        "name": "Site",
+        "url": "https://apga-bliss.infinityfreeapp.com/ ",
+        "icon": "<i class='fa-solid fa-arrow-up-right-from-square'></i>"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
+      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
+      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+    ],
+    "isActive": false,
+    "developing": false
+  }
+]

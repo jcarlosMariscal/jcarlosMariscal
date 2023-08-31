@@ -10,11 +10,18 @@
           :class="{ show: card.isActive }"
         >
           <div class="card__main">
-            <img :src="card.image" alt="" />
-            <div class="main-btn">
+            <img :src="require('../assets/' + card.image)" alt="" />
+            <div class="main-btn" v-if="!card.developing">
               <button @click="toggleContent(card)" class="btn-arrow">
                 <i class="bx bx-left-arrow-circle"></i>
               </button>
+            </div>
+            <div class="developing" v-if="card.developing">
+              <i class="bx bx-cog"></i>
+              <div class="developing-text">
+                En desarrollo <span class="dot">.</span
+                ><span class="dot">.</span><span class="dot">.</span>
+              </div>
             </div>
             <!-- <div class="card__main-img"></div> -->
             <div class="main-text">
@@ -23,12 +30,15 @@
                 {{ card.description }}
               </p>
               <div class="text-technologies">
-                <p class="technologie"><i class="bx bxl-vuejs"></i></p>
-                <p class="technologie"><i class="bx bxl-html5"></i></p>
-                <p class="technologie"><i class="bx bxl-vuejs"></i></p>
-                <p class="technologie"><i class="bx bxl-html5"></i></p>
-                <p class="technologie"><i class="bx bxl-vuejs"></i></p>
-                <p class="technologie"><i class="bx bxl-html5"></i></p>
+                <div
+                  class="technologie"
+                  v-for="(tech, i) in card.technologies"
+                  :key="i"
+                  :title="tech.name"
+                >
+                  <p class="icon" v-html="tech.icon"></p>
+                  <p class="name">{{ tech.name }}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -37,13 +47,8 @@
               <h3>{{ card.title }}</h3>
             </div>
             <div class="card__detail-options">
-              <div class="option">
-                <a href="/"><i class="fa-brands fa-github"></i></a>
-              </div>
-              <div class="option">
-                <a href="/"
-                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+              <div class="option" v-for="(link, i) in card.links" :key="i">
+                <a :href="link.url" :title="link.name" v-html="link.icon"></a>
               </div>
             </div>
           </div>
@@ -55,40 +60,24 @@
 
 <script lang="ts" setup>
 import { Ref, ref } from "vue";
+import data from "@/assets/data/projects.json";
 
 interface Card {
-  image: string;
   title: string;
   description: string;
+  image: string;
   date: string;
+  links: Array<{ name: string; url: string; icon: string }>;
+  technologies: Array<{ name: string; icon: string }>;
   isActive: boolean;
+  developing: boolean;
 }
-const card: Ref<Card> = ref({
-  image: "",
-  title: "",
-  description: "",
-  date: "",
-  isActive: false,
-});
+console.log(data);
+
 const cards: Ref<Array<Card>> = ref([]);
-cards.value.push({
-  image: require("../assets/ramiz.png"),
-  title: "Proyecto 1",
-  description:
-    "Se desarrolló una mini biblioteca para recomendar libros a los usuarios, en donde se ofrece un resumen del libro y un enlace para leer el libro gratis o comprarlo, además de ofrecer noticias relevantes de autores, librerias, libros, etc.",
-  date: "Enero - Febrero 2023",
-  isActive: false,
-});
-cards.value.push({
-  image: require("../assets/agricultura.png"),
-  title: "Proyecto 2",
-  description:
-    "Este es un sitio web donde se publican noticias sobre agricultura, tiene diferentes secciones como una galeria de imágenes, sección de noticias, un directorio de las universidades que cuentan con una carrera relacionada, una sección de documentos públicos y privados.",
-  date: "Enero - Febrero 2023",
-  isActive: false,
-});
+
+cards.value = data;
 const toggleContent = (card: Card) => {
-  console.log(cards.value);
   card.isActive = !card.isActive;
 };
 </script>
@@ -161,6 +150,7 @@ const toggleContent = (card: Card) => {
   border-radius: 0.3rem;
   width: 100%;
   height: 100%;
+  /* object-fit: cover; */
 }
 .card .card__main .main-btn {
   position: absolute;
@@ -216,6 +206,73 @@ const toggleContent = (card: Card) => {
     transform: rotate(540deg);
   }
 }
+.developing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  color: var(--permanent-white);
+}
+.developing i {
+  font-size: 3rem;
+  animation: cdot 2s infinite linear;
+}
+@keyframes cdot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.developing .developing-text {
+  /* margin: 0 auto; */
+  /* width: 120px; */
+  /* background: aqua; */
+  /* width: 100%; */
+  /* text-align: center; */
+  font-size: 1rem;
+}
+.dot {
+  font-size: 2rem;
+  color: transparent;
+  display: inline-block;
+  animation: bouncing 700ms infinite ease-out forwards;
+  animation-fill-mode: forwards;
+}
+.dot:nth-child(2) {
+  animation-delay: 125ms;
+}
+.dot:nth-child(3) {
+  animation-delay: 250ms;
+}
+@keyframes bouncing {
+  0% {
+    /* transform: none; */
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    /* color: transparent; */
+  }
+  33% {
+    transform: translateY(-0.3rem);
+  }
+  66% {
+    /* transform: none; */
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+    color: var(--permanent-white);
+  }
+}
+
 .card .card__main .main-text {
   border-radius: 0.3rem;
   position: absolute;
@@ -259,6 +316,7 @@ const toggleContent = (card: Card) => {
   justify-content: space-evenly;
   gap: 2rem;
   overflow-x: scroll;
+  overflow-y: hidden;
   /* background: var(--navbar-bg); */
 }
 .card .card__main .main-text .text-technologies::-webkit-scrollbar {
@@ -285,17 +343,31 @@ const toggleContent = (card: Card) => {
 .card .card__main .main-text .text-technologies .technologie {
   font-size: 2rem;
   color: var(--color-text);
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
 }
-.technologie {
+.technologie .icon {
   position: relative;
   /* transition: all; */
-  /* background-color: aqua; */
+  /* background-color: aqua !important; */
+  margin: 0;
+  padding: 0;
   width: 2rem;
   height: 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 1 !important;
+}
+.technologie .name {
+  margin-top: -0.5rem !important;
+  font-size: 0.85rem;
+  /* background-color: orange; */
 }
 
 /* .technologie.vue:hover {
@@ -368,7 +440,7 @@ const toggleContent = (card: Card) => {
   transition: transform 0.2s ease-in; */
   }
   .card .card__main {
-    height: 300px;
+    height: 250px;
   }
 }
 @media screen and (max-width: 940px) {
