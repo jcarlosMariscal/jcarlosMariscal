@@ -39,11 +39,12 @@
           desarrollo web. Me mantengo en constante aprendizaje sobre nuevas
           tecnologías en el desarrollo.
         </p>
+        <div class="resume__social">
+          <SocialNetworks />
+        </div>
         <div class="resume__btns">
-          <button type="button" class="btn btn-contact btn-anim">
-            Contáctame
-          </button>
-          <button type="button" class="btn btn-cv btn-anim">Curriculum</button>
+          <a href="#contacto" class="btn btn-contact btn-anim"> Contáctame </a>
+          <a href="#" class="btn btn-cv btn-anim">Curriculum</a>
         </div>
       </div>
     </div>
@@ -52,6 +53,7 @@
 
 <script lang="ts" setup>
 import { Ref, ref } from "vue";
+import SocialNetworks from "@/components/SocialNetworks.vue";
 
 const avatarHover: Ref<boolean> = ref(false);
 const avatar = ref({
@@ -127,6 +129,9 @@ const resetAvatar = () => {
   font-size: 1rem;
   text-align: justify;
   line-height: 1.5rem;
+}
+.resume__social {
+  margin: 1.5rem 0;
 }
 .resume__btns {
   margin: 2rem 0;

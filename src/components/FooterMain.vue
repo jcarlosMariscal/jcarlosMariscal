@@ -1,13 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer__social">
-      <div class="social__networks">
-        <a href="" class="network"><i class="bx bxl-instagram"></i></a>
-        <a href="" class="network"><i class="bx bxl-facebook"></i></a>
-        <a href="" class="network"><i class="bx bxl-linkedin"></i></a>
-        <a href="" class="network"><i class="bx bxl-github"></i></a>
-        <a href="" class="network"><i class="bx bxl-twitter"></i></a>
-      </div>
+      <SocialNetworks />
     </div>
     <div class="footer__copyright">
       <p>Copyright © 2023 <a href="">Carlos Mariscal</a></p>
@@ -15,7 +9,9 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import SocialNetworks from "@/components/SocialNetworks.vue";
+</script>
 
 <style scoped>
 .footer {
@@ -39,21 +35,6 @@
 .footer__social,
 .footer__copyright {
   padding: 0.5rem;
-}
-.footer__social .social__networks {
-  display: flex;
-  gap: 1.5rem;
-}
-.footer__social .social__networks .network {
-  font-size: 2rem;
-  color: var(--color-text);
-  transition: all 0.3s ease-in;
-}
-.footer__social .social__networks .network:hover {
-  background: var(--gradient-background);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in;
 }
 .footer__copyright p {
   color: var(--color-text);

@@ -213,7 +213,7 @@ const sendEmail = () => {
     flex-direction: column;
   }
   .contact__avatar {
-    background: aqua;
+    /* background: aqua; */
     width: 60% !important;
   }
   .contact__form {
@@ -222,7 +222,7 @@ const sendEmail = () => {
 }
 @media screen and (max-width: 600px) {
   .contact__avatar {
-    background: aqua;
+    /* background: aqua; */
     width: 80% !important;
   }
 }
