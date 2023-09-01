@@ -72,7 +72,7 @@ interface Card {
   isActive: boolean;
   developing: boolean;
 }
-console.log(data);
+// console.log(data);
 
 const cards: Ref<Array<Card>> = ref([]);
 

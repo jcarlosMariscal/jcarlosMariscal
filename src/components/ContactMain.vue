@@ -12,6 +12,7 @@
               <input
                 type="text"
                 name="name"
+                v-model="name"
                 id="name"
                 placeholder="Name"
                 class="input__name form__input2"
@@ -25,19 +26,33 @@
                 type="email"
                 name="email"
                 id="email"
+                v-model="email"
                 class="input__email form__input2"
                 placeholder="Escriba su correo electrónico"
-                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
                 required
                 autocomplete="off"
               />
               <label for="email" class="form__label2">Correo</label>
             </div>
+            <div class="form__input">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                v-model="subject"
+                class="input__name form__input2"
+                placeholder="Escriba un asunto"
+                required
+                autocomplete="off"
+              />
+              <label for="subject" class="form__label2">Asunto</label>
+            </div>
             <div class="form__textarea form__message form__input">
               <textarea
-                type="email"
-                name="email"
-                id="email"
+                type="message"
+                name="message"
+                id="message"
+                v-model="message"
                 class="textarea__message form__input2"
                 placeholder="Escriba su correo electrónico"
                 pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
@@ -68,10 +83,13 @@
 // import emailjs from "";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-import { ref } from "vue";
+import { Ref, ref } from "vue";
 const form = ref();
-console.log(process.env.VUE_APP_TEMPLATE_ID);
-console.log(process.env.VUE_APP_PUBLIC_KEY);
+
+let name: Ref<string> = ref("");
+let email: Ref<string> = ref("");
+let subject: Ref<string> = ref("");
+let message: Ref<string> = ref("");
 
 const sendEmail = () => {
   emailjs
@@ -105,9 +123,13 @@ const sendEmail = () => {
           title: "El correo se ha enviado!!!",
           iconColor: "#0da175",
         });
+        name.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
       },
       (error) => {
-        console.log("FAILED...", error.text);
+        // console.log("FAILED...", error.text);
         const Toast = Swal.mixin({
           toast: true,
           position: "top-end",
@@ -124,6 +146,10 @@ const sendEmail = () => {
           icon: "error",
           title: "Ha ocurrido un error, por favor intente de nuevo más tarde.",
         });
+        name.value = "";
+        email.value = "";
+        subject.value = "";
+        message.value = "";
       }
     );
 };
