@@ -67,4 +67,9 @@ import ContactMain from "../components/ContactMain.vue";
     margin: 1rem 0.5rem;
   }
 }
+.custom-color {
+  fill: var(--color-text);
+  width: 5rem !important;
+  height: 5rem !important;
+}
 </style>

@@ -14,12 +14,20 @@
             <p>CSS</p>
           </div>
           <div class="card dev">
+            <img src="../assets/tech-icons/sass.png" alt="" />
+            <p>SASS</p>
+          </div>
+          <div class="card dev">
             <img src="../assets/tech-icons/js.png" alt="" />
             <p>JavaScript</p>
           </div>
           <div class="card dev">
             <img src="../assets/tech-icons/vue.png" alt="" />
             <p>Vue JS</p>
+          </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/react.png" alt="" />
+            <p>React JS</p>
           </div>
           <div class="card dev">
             <img src="../assets/tech-icons/tailwind.png" alt="" />
@@ -29,11 +37,51 @@
             <img src="../assets/tech-icons/bootstrap.png" alt="" />
             <p>Bootstrap</p>
           </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/php.png" alt="" />
+            <p>PHP</p>
+          </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/sql.png" alt="" />
+            <p>SQL</p>
+          </div>
+          <div class="card dev">
+            <img src="../assets/tech-icons/node.png" alt="" />
+            <p>Node JS</p>
+          </div>
         </div>
         <div class="cards">
           <div class="card tool">
+            <img src="../assets/tech-icons/github.png" alt="" />
+            <p>GitHub</p>
+          </div>
+          <div class="card tool">
+            <img src="../assets/tech-icons/git.png" alt="" />
+            <p>Git</p>
+          </div>
+          <div class="card tool">
+            <img src="../assets/tech-icons/gitlab.png" alt="" />
+            <p>GitLab</p>
+          </div>
+          <div class="card tool">
+            <img src="../assets/tech-icons/xd.png" alt="" />
+            <p>Adobe XD</p>
+          </div>
+          <div class="card tool">
             <img src="../assets/tech-icons/firebase.png" alt="" />
             <p>Firebase</p>
+          </div>
+          <div class="card tool">
+            <img src="../assets/tech-icons/vscode.png" alt="" />
+            <p>VS Code</p>
+          </div>
+          <div class="card tool">
+            <img src="../assets/tech-icons/slack.png" alt="" />
+            <p>Slack</p>
+          </div>
+          <div class="card tool">
+            <img src="../assets/tech-icons/bitbucket.png" alt="" />
+            <p>Bitbucket</p>
           </div>
         </div>
       </div>

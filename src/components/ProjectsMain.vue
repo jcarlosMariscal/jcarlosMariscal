@@ -302,19 +302,20 @@ const toggleContent = (card: Card) => {
 }
 .card .card__main .main-text .text-description {
   /* background: purple; */
-  padding: 0.1rem 0.3rem;
+  padding: 0 0.3rem;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.3rem;
 }
 .card .card__main .main-text .text-technologies {
-  margin: 1rem 0.5rem;
+  margin: 0 0.5rem;
+  margin-top: -0.1rem;
   /* background: pink; */
   display: flex;
   align-items: center;
   /* flex-wrap: wrap; */
-  justify-content: space-evenly;
-  gap: 2rem;
+  justify-content: space-around;
+  /* gap: rem; */
   overflow-x: scroll;
   overflow-y: hidden;
   /* background: var(--navbar-bg); */
@@ -344,6 +345,7 @@ const toggleContent = (card: Card) => {
   font-size: 2rem;
   color: var(--color-text);
   /* background-color: pink; */
+  padding: 0 !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,8 +367,8 @@ const toggleContent = (card: Card) => {
   z-index: 1 !important;
 }
 .technologie .name {
-  margin-top: -0.5rem !important;
-  font-size: 0.85rem;
+  margin-top: -0.4rem !important;
+  font-size: 0.6rem;
   /* background-color: orange; */
 }
 
