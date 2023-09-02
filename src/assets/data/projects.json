@@ -2,7 +2,7 @@
   {
     "title": "Rami'z Pizza",
     "description": "Sitio web para mostrar información de los precios y especialidades de una pizzería. Permite personalizar los precios, promociones, especialidades, etc. mediante un CRUD de forma rápida y sencilla.",
-    "image": "biblioteca.jpg",
+    "image": "biblioteca.avif",
     "date": "- Agosto 2023",
     "links": [],
     "technologies": [
@@ -17,7 +17,7 @@
   {
     "title": "Rami'z Pizza",
     "description": "Sitio web para mostrar información de los precios, promociones y especialidades de una pizzería. Permite personalizar su información mediante un CRUD de forma rápida y sencilla, además de se integra un inicio de sesión con correo y contraseña a través de Firebase.",
-    "image": "ramiz.png",
+    "image": "ramiz.avif",
     "date": "- Agosto 2023",
     "links": [
       {
@@ -43,7 +43,7 @@
   {
     "title": "Gestor de cursos",
     "description": "Proyecto realizado con VUE para ayudar en la gestión de cursos, fue desarrollado para poner en práctica Vue. Se integraron funcionalidades como un inicio de sesión con email/password y Google a través de Firebase y un CRUD para gestionar Estudiantes, Materias y Calificaciones.",
-    "image": "gestor-cursos.png",
+    "image": "gestor-cursos.avif",
     "date": "| Julio 2023",
     "links": [
       {
@@ -70,7 +70,7 @@
   {
     "title": "Apga Bliss",
     "description": "Apga Bliss es una aplicación que permite gestionar los gastos personales para una mejor toma de decisiones sobre los ingresos, integra diferentes librerías para ayudar con la gestión, como la selección de íconos e íconos para las categorías, gráficas e inicio de sesión con Google.",
-    "image": "apga-bliss.png",
+    "image": "apga-bliss.avif",
     "date": "| Enero - Abril 2023",
     "links": [
       {
@@ -100,7 +100,7 @@
   {
     "title": "Conversor de Monedas",
     "description": "Proyecto escolar para hacer conversiones entre monedas, está aplicación es una PWA por lo que se puede instalar en el dispositivo y usarse sin conexión a internet. Para la conversión se consumió la API de ExchangeRate, además se integró OneSignal para el envío de notificaciones. ",
-    "image": "conversor-monedas.png",
+    "image": "conversor-monedas.avif",
     "date": "| Septiembre - Diciembre 2022",
     "links": [
       {
@@ -126,7 +126,7 @@
   {
     "title": "Easy Sale",
     "description": "Easy Sale es un aplicación para microempresas, es un punto de venta desarrollado como un proyecto escolar con el objetivo de facilitar el proceso de compra y venta de productos, gestionar proveedores, inventario, reportes, cortes de caja y reportes.",
-    "image": "easy-sale.png",
+    "image": "easy-sale.avif",
     "date": "| Septiembre - Diciembre 2022",
     "links": [
       {
@@ -156,7 +156,7 @@
   {
     "title": "Agricultura",
     "description": "Sitio web desarrollado para la publicación de noticias sobre Agricultura, cuenta con una sección de galería, noticias, directorio y documentos públicos / privados. Me desarrollé en el area Back-end, teniendo como responsabilidad la creación de la base de datos y su manipulación con PHP.",
-    "image": "agricultura.png",
+    "image": "agricultura.avif",
     "date": "| Enero - Abril 2023",
     "links": [
       {
