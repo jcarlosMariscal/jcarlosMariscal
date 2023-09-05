@@ -35,16 +35,23 @@
           Web.
         </h1>
         <p class="resume__description">
-          Ing. en Desarrollo y Gestión de Software, con actual enfoque en
-          desarrollo web. Me mantengo en constante aprendizaje sobre nuevas
-          tecnologías en el desarrollo.
+          Soy Ing. en Desarrollo y Gestión de Software, con actual enfoque en
+          desarrollo web. Me apasiona la tecnología y el desarrollo, y estoy
+          constantemente aprendiendo sobre las últimas tendencias. Me interesa
+          contribuir en proyectos innovadores y seguir creciendo
+          profesionalmente.
         </p>
         <div class="resume__social">
           <SocialNetworks />
         </div>
         <div class="resume__btns">
           <a href="#contacto" class="btn btn-contact btn-anim"> Contáctame </a>
-          <a href="#" class="btn btn-cv btn-anim">Curriculum</a>
+          <a
+            href="/CV_CarlosMariscal.pdf"
+            download="CV_CarlosMariscal.pdf"
+            class="btn btn-cv btn-anim"
+            >Curriculum</a
+          >
         </div>
       </div>
     </div>

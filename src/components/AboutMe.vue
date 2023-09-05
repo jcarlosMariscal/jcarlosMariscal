@@ -12,27 +12,34 @@
           </p>
           <p>
             Apasionado por la tecnología y el continúo aprendizaje, estoy en
-            busqueda de retos y nuevas oportunidades que me permitan crecer
-            personal y profesionalmente.
+            busqueda de retos y nuevas oportunidades que no solo me permitan
+            crecer profesionalmente, sino también aportar valor a los proyectos
+            que participo.
           </p>
           <p>
-            En anteriores trabajos he formado parte de grandes equipos donde he
-            participado en diferentes proyectos, en donde ademas de aplicar mis
-            conocimientos, también he adquirido muy buena experiencia en
-            desarrollo web, las cuáles incluyen
+            Durante mi trayecto profesional, he sido parte de talentosos equipos
+            en los que he contribuido en una variedad de proyectos. Mi
+            experiencia abarca en desarrollo frontend, donde he trabajado con
+            tecnologías como
             <span class="learned">HTML</span>,
-            <span class="learned">CSS</span> ,
-            <span class="learned">JavaScript</span> , marcos como
-            <span class="learned">Tailwind</span> y
-            <span class="learned">Bootstrap</span>, librerías como
-            <span class="learned">Vue JS</span>. En el backend he trabajado con
-            <span class="learned">PHP</span>,
-            <span class="learned">MySQL</span> y
-            <span class="learned">Firebase</span>.
+            <span class="learned">CSS</span> y
+            <span class="learned">JavaScript</span> , así como con frameworks
+            como <span class="learned">Vue JS</span> . Además, he utilizado
+            herramientas como <span class="learned">Tailwind</span> y
+            <span class="learned">Bootstrap</span> para crear interfaces
+            modernas y atractivas. En el backend he trabajado con
+            <span class="learned">PHP</span> y
+            <span class="learned">MySQL</span>, y he explorado las capacidades
+            de <span class="learned">Firebase</span> para proyectos en tiempo
+            real, como <span class="learned">Realtime Database</span> y
+            <span class="learned">Firestore Database</span>, así como la
+            implementación de sistemas de autenticación y la integración con
+            proveedores de autenticación de terceros como Google y Facebook.
           </p>
           <p>
-            Soy una persona adaptable y que aprende rápido, por lo que otros
-            tecnologías que me interesa aprender es
+            Soy una persona adaptable y de aprendizaje rápido, cualidades que me
+            permiten abordar nuevos desafíos con confianza. Actualmente en mi
+            lista de tecnologías por aprender se encuentran
             <span class="learning">React JS</span>,
             <span class="learning">Node JS</span> ,
             <span class="learning">Material UI</span>, y
