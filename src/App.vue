@@ -209,10 +209,7 @@ nav a.router-link-exact-active {
 }
 
 ::-webkit-scrollbar-track {
-  /* width: 15px; */
   background: var(--color-bg);
-  /* -webkit-border-radius: 10px; */
-  /* border-radius: 10px; */
 }
 
 ::-webkit-scrollbar-thumb {
