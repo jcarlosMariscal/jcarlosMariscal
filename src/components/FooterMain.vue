@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import SocialNetworks from "@/components/SocialNetworks.vue";
+import SocialNetworks from "./HomeComponents/SocialNetworks.vue";
 </script>
 
 <style scoped>

@@ -27,21 +27,11 @@
     </div>
     <div class="navbar__menu" :class="{ 'mobile-active': mobileNavbar }">
       <ul class="navbar__menu-options">
-        <li class="menu__option">
-          <a href="#inicio" class="header-anim item draw">Inicio</a>
-        </li>
-        <li class="menu__option">
-          <a href="#sobre-mi" class="header-anim item draw">Sobre mí</a>
-        </li>
-        <li class="menu__option">
-          <a href="#proyectos" class="header-anim item draw">Proyectos</a>
-        </li>
-        <li class="menu__option">
-          <a href="#tecnologias" class="header-anim item draw">Tecnologías</a>
-        </li>
-        <li class="menu__option">
-          <a href="#contacto" class="header-anim item draw">Contacto</a>
-        </li>
+        <ButtonHeader
+          v-for="(nav, index) in navigation"
+          :key="index"
+          :nav="nav"
+        />
       </ul>
     </div>
   </nav>
@@ -49,6 +39,19 @@
 
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
+import ButtonHeader from "./pure/ButtonHeader.vue";
+type TNavigation = {
+  title: string;
+  to: string;
+};
+
+const navigation: TNavigation[] = [
+  { title: "Inicio", to: "/" },
+  { title: "Sobre Mí", to: "/about-me" },
+  { title: "Proyectos", to: "/projects" },
+  { title: "Tecnologías", to: "/technologies" },
+  { title: "Contacto", to: "/contact" },
+];
 
 const darkMode = ref(true);
 const mobileNavbar = ref(false);
@@ -70,6 +73,7 @@ const lightModeActivated = () => {
     "rgba(236, 236, 238, 0.8)"
   );
 };
+
 onMounted(() => {
   if (darkMode.value) {
     darkModeActivated();
@@ -149,24 +153,6 @@ const changeTheme = () => {
   display: flex;
   gap: 2rem;
 }
-.navbar__menu-options .menu__option .item {
-  padding: 0 0.3rem;
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  line-height: 24px;
-  transition: all 0.1s ease-in;
-  padding: 0.5rem 0.2rem;
-  color: var(--color-text);
-  font-weight: 500 !important;
-  /* background-color: aqua; */
-  /* border: 1px solid red; */
-}
-.navbar__menu-options .menu__option .item:hover {
-  color: var(--color-primary);
-  /* border-bottom: 1px solid var(--color-primary); */
-}
-
 @media screen and (max-width: 800px) {
   .navbar__menu-mobile {
     display: block;
@@ -219,10 +205,6 @@ const changeTheme = () => {
 @media screen and (max-width: 500px) {
   .navbar__menu-options {
     width: 100%;
-  }
-  .navbar__menu-options .menu__option .item {
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -284,3 +266,4 @@ const changeTheme = () => {
 /* height 0.25s ease-out 0.75s; */
 /* } */
 </style>
+<!-- 288 -->
