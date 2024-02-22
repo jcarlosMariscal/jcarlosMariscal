@@ -161,16 +161,8 @@ html {
   padding: 0;
   margin: 0;
   background-color: var(--color-bg);
-  background-size: 40px 40px;
-  background-image: radial-gradient(
-    transparent 25px,
-    var(--color-bg-second) 25px,
-    var(--color-bg-second) 30px,
-    transparent 30px
-  );
 }
 .container {
-  /* background: aqua; */
   height: auto;
   margin: 1rem 3rem;
 }
