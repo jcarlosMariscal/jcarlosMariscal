@@ -44,13 +44,16 @@
         </p>
       </div>
       <div class="information-avatar">
-        <img src="../assets/about-avatar.webp" alt="Avatar" />
+        <AvatarComponent :avatar1="avatar" :animate="false" />
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import AvatarComponent from "@/components/pure/AvatarComponent.vue";
+import avatar from "@/assets/about-avatar.png";
+</script>
 
 <style scoped>
 .aboutMe__content {

@@ -18,5 +18,3 @@ const props = defineProps({
   download: { type: String, required: false },
 });
 </script>
-
-<style scoped></style>

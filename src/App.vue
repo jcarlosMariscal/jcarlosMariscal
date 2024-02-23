@@ -17,7 +17,6 @@ import FooterMain from "./components/FooterMain.vue";
   margin: 1rem 10rem;
 }
 .btn {
-  /* border: 1px solid var(--color-primary) !important; */
   color: var(--color-text);
   border: none;
   padding: 0.8rem 1.2rem;
@@ -30,13 +29,6 @@ import FooterMain from "./components/FooterMain.vue";
   font-size: 1rem;
   transition: all 0.2s ease-in;
   cursor: pointer;
-  background-image: linear-gradient(
-    to left,
-    transparent,
-    transparent 50%,
-    var(--color-primary) 50%,
-    var(--color-primary)
-  );
   background-position: 100% 0;
   background-size: 200% 100%;
   transition: all 0.25s ease-in;
@@ -72,11 +64,6 @@ import FooterMain from "./components/FooterMain.vue";
   .container {
     margin: 1rem 1.5rem;
   }
-}
-.custom-color {
-  fill: var(--color-text);
-  width: 5rem !important;
-  height: 5rem !important;
 }
 .my-toast-popup {
   background-color: var(

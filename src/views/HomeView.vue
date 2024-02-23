@@ -1,14 +1,6 @@
 <template>
   <div class="main__content">
-    <div class="main__content-avatar">
-      <img
-        class="home-avatar"
-        :src="avatar.url"
-        alt="{{ avatar.name }}"
-        @mouseenter="changeAvatar()"
-        @mouseleave="resetAvatar()"
-      />
-    </div>
+    <AvatarComponent :avatar1="avatar1" :avatar2="avatar2" :animate="true" />
     <div class="main__content-resume">
       <h1 class="resume__title">
         !Hola! Soy <span class="title-name">Juan Carlos</span>, Desarrollador
@@ -35,20 +27,12 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
 import LinkComponent from "@/components/pure/LinkComponent.vue";
 import SocialNetworks from "@/components/HomeComponents/SocialNetworks.vue";
+import AvatarComponent from "@/components/pure/AvatarComponent.vue";
 
-const avatar = ref({
-  name: "Avatar 1",
-  url: require("../assets/greeting-avatar.png"),
-});
-const changeAvatar = () => {
-  avatar.value.url = require("../assets/greeting-avatar2.png");
-};
-const resetAvatar = () => {
-  avatar.value.url = require("../assets/greeting-avatar.png");
-};
+import avatar1 from "@/assets/greeting-avatar.png";
+import avatar2 from "@/assets/greeting-avatar2.png";
 </script>
 
 <style scoped lang="scss">
@@ -59,21 +43,7 @@ const resetAvatar = () => {
   gap: 1rem;
   padding: 0 1rem;
 }
-.main__content-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-bg-second);
-  border-radius: 100%;
-  width: 10rem;
-  height: 10rem;
-  .home-avatar {
-    transform: rotateY(180deg);
-    width: 8rem;
-    height: auto;
-    object-fit: cover;
-  }
-}
+
 .main__content-resume {
   color: var(--color-text);
 }
@@ -82,7 +52,7 @@ const resetAvatar = () => {
   line-height: 3rem;
   .title-name {
     font-weight: bold;
-    color: var(--color-secondary);
+    color: var(--color-second);
   }
 }
 .resume__description {
