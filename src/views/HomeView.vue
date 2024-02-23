@@ -63,7 +63,7 @@ const resetAvatar = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(15 23 42);
+  background: var(--color-bg-second);
   border-radius: 100%;
   width: 10rem;
   height: 10rem;
@@ -82,7 +82,7 @@ const resetAvatar = () => {
   line-height: 3rem;
   .title-name {
     font-weight: bold;
-    color: rgb(52 211 153);
+    color: var(--color-secondary);
   }
 }
 .resume__description {

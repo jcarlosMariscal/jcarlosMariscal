@@ -1,0 +1,20 @@
+:root {
+  --color-bg: rgb(241 245 249);
+  --color-text: #141414;
+  --color-white: rgb(241 245 249);
+  --color-dark: #141414;
+  --color-bg-second: rgb(229 231 235);
+  --color-primary: rgb(56 189 248);
+  --color-secondary: rgb(129 140 248);
+  --font-family: "Poppins", sans-serif;
+}
+[data-theme="dark"] {
+  --color-bg: rgb(2 6 23) !important;
+  --color-text: rgb(241 245 249) !important;
+  --color-white: rgb(241 245 249);
+  --color-dark: #141414 !important;
+  --color-bg-second: rgb(15 23 42) !important;
+  --color-primary: rgb(56 189 248);
+  --color-secondary: rgb(129 140 248);
+  --font-family: "Poppins", sans-serif;
+}

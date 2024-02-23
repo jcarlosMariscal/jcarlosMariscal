@@ -38,13 +38,12 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 import ButtonHeader from "./pure/ButtonHeader.vue";
 type TNavigation = {
   title: string;
   to: string;
 };
-
 const navigation: TNavigation[] = [
   { title: "Inicio", to: "/" },
   { title: "Sobre Mí", to: "/about-me" },
@@ -52,54 +51,23 @@ const navigation: TNavigation[] = [
   { title: "Tecnologías", to: "/technologies" },
   { title: "Contacto", to: "/contact" },
 ];
-
-const darkMode = ref(true);
 const mobileNavbar = ref(false);
-const darkModeActivated = () => {
-  document.documentElement.style.setProperty("--color-text", "#ececee");
-  document.documentElement.style.setProperty("--color-bg", "#141414");
-  document.documentElement.style.setProperty("--color-bg-second", "#181717");
-  document.documentElement.style.setProperty(
-    "--navbar-bg",
-    "rgba(20, 20, 20, 0.8)"
-  );
-};
-const lightModeActivated = () => {
-  document.documentElement.style.setProperty("--color-text", "#141414");
-  document.documentElement.style.setProperty("--color-bg", "#ececee");
-  document.documentElement.style.setProperty("--color-bg-second", "#e8e8f8");
-  document.documentElement.style.setProperty(
-    "--navbar-bg",
-    "rgba(236, 236, 238, 0.8)"
-  );
-};
+const theme = ref<"light" | "dark">("light");
+const darkMode = ref(false);
 
-onMounted(() => {
-  if (darkMode.value) {
-    darkModeActivated();
-  } else {
-    lightModeActivated();
-  }
-});
-
-const navbarMobile = () => (mobileNavbar.value = !mobileNavbar.value);
 const changeTheme = () => {
-  darkMode.value = !darkMode.value;
-  if (darkMode.value) {
-    darkModeActivated();
-  } else {
-    lightModeActivated();
-  }
+  theme.value = theme.value === "light" ? "dark" : "light";
+  darkMode.value = theme.value === "light" ? false : true;
+  document.documentElement.setAttribute("data-theme", theme.value);
 };
+const navbarMobile = () => (mobileNavbar.value = !mobileNavbar.value);
 </script>
-
 <style scoped>
 .navbar {
   width: 100%;
   height: 4rem;
   position: sticky;
   top: 0;
-  /* transition: all 0.5s ease-in; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,8 +88,8 @@ const changeTheme = () => {
   align-items: center;
 }
 .navbar__resume-profile .profile-icon {
-  background: var(--gradient-background);
-  color: var(--permanent-white) !important;
+  background: var(--color-text);
+  color: var(--color-bg) !important;
   width: 2rem;
   height: 2rem;
   padding: 0.3rem;
@@ -129,7 +97,7 @@ const changeTheme = () => {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  border-radius: 0.3rem;
+  border-radius: 50%;
 }
 .navbar-theme .theme-btn {
   color: var(--color-text) !important;
@@ -207,63 +175,5 @@ const changeTheme = () => {
     width: 100%;
   }
 }
-
-/* Source --: https://www.sliderrevolution.com/resources/css-border-animation/ ++ CSS Border transitions [Draw] ++ */
-.header-anim {
-  background: none;
-  border: 0;
-  box-sizing: border-box;
-  font-size: inherit;
-  font-weight: 700;
-  position: relative;
-  vertical-align: middle;
-  padding: 0.5rem 1rem !important;
-}
-.header-anim::before,
-.header-anim::after {
-  box-sizing: inherit;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.draw {
-  transition: color 0.25s;
-}
-.draw::before,
-.draw::after {
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
-}
-.draw::before {
-  top: 0;
-  left: 0;
-}
-.draw::after {
-  bottom: 0;
-  right: 0;
-}
-.draw:hover {
-  color: var(--color-primary);
-}
-.draw:hover::before,
-.draw:hover::after {
-  width: 100%;
-  height: 100%;
-}
-.draw:hover::before {
-  border-bottom-color: var(--color-primary);
-  /* border-right-color: var(--color-primary); */
-  /* border-left-color: var(--color-primary); */
-  border-top-color: var(--color-primary);
-  transition: width 0.15s ease-out, height 0.25s ease-out 0.0001s;
-}
-/* .draw:hover::after { */
-/* border-bottom-color: var(--color-primary); */
-/* border-left-color: var(--color-secondary); */
-/* transition: border-color 0s ease-out 0.5s, width 0.15s ease-out 0.5s, */
-/* height 0.25s ease-out 0.75s; */
-/* } */
 </style>
 <!-- 288 -->

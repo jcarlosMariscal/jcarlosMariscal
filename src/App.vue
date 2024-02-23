@@ -10,7 +10,8 @@ import NavBarMain from "./components/NavBarMain.vue";
 import FooterMain from "./components/FooterMain.vue";
 </script>
 <style>
-@import "assets/css//style.css";
+@import "assets/css/theme.css";
+@import "assets/css/style.css";
 .container {
   height: auto;
   margin: 1rem 10rem;
@@ -42,10 +43,11 @@ import FooterMain from "./components/FooterMain.vue";
 }
 .btn:hover {
   background-position: 0 0;
-  color: var(--permanent-white);
+  color: var(--color-white);
   transition: all 0.2s ease-in;
 }
 .btn-contact {
+  color: var(--color-primary);
   border: 1px solid var(--color-primary);
   background-image: linear-gradient(
     to left,
@@ -56,6 +58,7 @@ import FooterMain from "./components/FooterMain.vue";
   );
 }
 .btn-cv {
+  color: var(--color-secondary);
   border: 1px solid var(--color-secondary);
   background-image: linear-gradient(
     to left,

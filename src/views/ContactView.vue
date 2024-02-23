@@ -390,7 +390,7 @@ html .form__input2:focus + .form__label2,
 html .form__input2:not(:placeholder-shown) + .form__label2 {
   transform: translateY(-4rem) scale(1);
   background: var(--color-secondary);
-  color: var(--permanent-white);
+  color: var(--color-white);
   border-radius: 0.1rem;
   font-weight: normal;
 

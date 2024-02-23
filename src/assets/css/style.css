@@ -1,20 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
-:root {
-  --color-bg: #ececee;
-  --permanent-white: #ececee;
-  --permanent-dark: #141414;
-  --color-text: #141414;
-  --color-bg-second: #e8e8f8;
-  --navbar-bg: rgba(236, 236, 238, 0.8);
-  --color-primary: #0da175;
-  --color-secondary: #109bbd;
-  --gradient-background: -webkit-linear-gradient(
-    45deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  --font-family: "Poppins", sans-serif;
-}
+
 html,
 body,
 div,
@@ -147,6 +132,6 @@ html {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  /* background-color: var(--color-bg); */
-  background: rgb(2 6 23); /* Slate */
+  background-color: var(--color-bg);
+  /* background: rgb(2 6 23); Slate */
 }

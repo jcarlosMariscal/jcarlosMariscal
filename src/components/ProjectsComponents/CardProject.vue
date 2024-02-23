@@ -71,7 +71,7 @@ const prop = defineProps({
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
-  color: var(--permanent-white);
+  color: var(--color-white);
 }
 .developing i {
   font-size: 3rem;
@@ -114,7 +114,7 @@ const prop = defineProps({
     opacity: 1;
     visibility: visible;
     display: inline-block;
-    color: var(--permanent-white);
+    color: var(--color-white);
   }
 }
 .card.show .card__main {
