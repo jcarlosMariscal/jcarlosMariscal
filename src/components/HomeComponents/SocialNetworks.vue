@@ -1,4 +1,5 @@
 <template>
+  <div class="resume__social"></div>
   <div class="social__networks">
     <a
       v-for="(social, index) in socials"
@@ -54,5 +55,8 @@ const socials: TSocial[] = [
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in;
+}
+.resume__social {
+  margin: 1.5rem 0;
 }
 </style>
