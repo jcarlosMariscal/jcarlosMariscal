@@ -1,75 +1,50 @@
-<div id="header" align="center">
-  <img align="right" src="https://img.freepik.com/vector-gratis/desarrolladores-web-dibujados-mano_23-2148819604.jpg?w=740&t=st=1669073852~exp=1669074452~hmac=402abffe8aed28c115771ed3635bb06f1a3d95d9b27350ed9f93b00f6756e0f8" width="200" alt="imagen" />
-  <h1 align="left">Hola 👋, yo soy Juan Carlos Ramírez Mariscal</h1>
-  <h3 align="left">Soy Ing. en Desarrollo y Gestión de Software, con actual enfoque en desarrollo web. Me apasiona la tecnología y el desarrollo, y estoy constantemente aprendiendo sobre las últimas tendencias. He trabajado en diferentes proyectos y estoy muy entusiasmado por formar parte de equipos donde pueda contribuir en proyectos innovadores y seguir creciendo profesionalmente.</h3>
+<!-- ```javascript
+const jc = {
+  name: "Jeje"
+}
+``` -->
+<img src="https://private-user-images.githubusercontent.com/74038190/240304586-d48893bd-0757-481c-8d7e-ba3e163feae7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg4MDEyOTgsIm5iZiI6MTcwODgwMDk5OCwicGF0aCI6Ii83NDAzODE5MC8yNDAzMDQ1ODYtZDQ4ODkzYmQtMDc1Ny00ODFjLThkN2UtYmEzZTE2M2ZlYWU3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI0VDE4NTYzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFjNmM3ZWQ2MTBiOTgyMDYwMDFjOGY0OWE5Y2RiNjYwYTIxMTZkNzllZGI1ZjE4OGE0NjE5MWMyMmI2ZGE3NDMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.fwzEGIEch8Jvk_rPhlrXV8-bhnZZH3ZQw5-oA-S9jnI" />
+<h1 align="left">Hola, Yo soy Juan Carlos Ramírez Mariscal <img style="transform:rotateY(180deg)" src="https://private-user-images.githubusercontent.com/74038190/238201075-34376b0e-4ae2-4278-9d3d-82e8016a87d6.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg3NTIxODAsIm5iZiI6MTcwODc1MTg4MCwicGF0aCI6Ii83NDAzODE5MC8yMzgyMDEwNzUtMzQzNzZiMGUtNGFlMi00Mjc4LTlkM2QtODJlODAxNmE4N2Q2LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI0VDA1MTgwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1NjZmNmQ1ZTkzNTY0NWMzYzhkY2NiODhjODdkMTZmZTllMzgwNzRkOWFiNzkyMWU1OTNjOTg1OTE1NzUyZGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.8QnniWIn791GUWpO9TFI30LqH2UkBCbiTwgUCIMLJsE" width="80" /></h1>
+<h4 align="justify">Hola, soy desarrollador web. Me apasiona la tecnología y estoy en constante aprendizaje sobre las últimas tendencias.</h4>
+
+<h3 align="left">Contáctame:</h3>
+
+[![X: JCarlosMariscal](https://img.shields.io/badge/-Carlos-black?&logo=x&logoColor=white&link=https://twitter.com/jc_zmar)](https://twitter.com/jc_zmar)
+[![Linkedin: JCarlosMariscal](https://img.shields.io/badge/-Juan_Carlos_Ramírez_Mariscal-blue?logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jcarlosmariscal/)](https://www.linkedin.com/in/jcarlosmariscal/)
+[![Instagram: JCarlosMariscal](https://img.shields.io/badge/-karlrm_16-C13584?logo=Instagram&logoColor=white&link=https://www.instagram.com/karlrm_16//)](https://www.instagram.com/karlrm_16/)
+[![GitHub: JCarlosMariscal](https://img.shields.io/badge/JCarlosMariscal-333?logo=github&logoColor=white&link=https://github.com/jcarlosMariscal)](https://github.com/jcarlosMariscal)
+[![Facebook: JCarlosMariscal](https://img.shields.io/badge/-JCarlos_Rz-4267B2?logo=facebook&logoColor=white&link=https://www.facebook.com/KarlosDragneel/)](https://www.facebook.com/KarlosDragneel/)
+[![](https://img.shields.io/badge/Portfolio-020617.svg?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojZDhlMWVmO30uY2xzLTJ7ZmlsbDojMDU5M2ZmO30uY2xzLTN7ZmlsbDojMGU2YWUwO308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGlkPSJCcm93c2VyIj48cmVjdCBjbGFzcz0iY2xzLTEiIGhlaWdodD0iMjQiIHJ4PSI0IiByeT0iNCIgd2lkdGg9IjI4IiB4PSIyIiB5PSI0Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzAsOHYySDJWOEE0LDQsMCwwLDEsNiw0SDI2QTQsNCwwLDAsMSwzMCw4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI0LDE2SDhhMSwxLDAsMCwxLDAtMkgyNGExLDEsMCwwLDEsMCwyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTI0LDIwSDhhMSwxLDAsMCwxLDAtMkgyNGExLDEsMCwwLDEsMCwyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE1LDI0SDhhMSwxLDAsMCwxLDAtMmg3YTEsMSwwLDAsMSwwLDJaIi8+PGNpcmNsZSBjbGFzcz0iY2xzLTMiIGN4PSIxMyIgY3k9IjciIHI9IjEiLz48Y2lyY2xlIGNsYXNzPSJjbHMtMyIgY3g9IjEwIiBjeT0iNyIgcj0iMSIvPjxjaXJjbGUgY2xhc3M9ImNscy0zIiBjeD0iNyIgY3k9IjciIHI9IjEiLz48L2c+PC9zdmc+)](https://jcarlosmariscal.netlify.app/)
+
+- 🔭 Actualmente estoy trabajando en una **Aplicación para gestionar gastos personales**
+
+<h3 align="left">Lenguajes y Herramientas:</h3>
+<div style="display: flex; gap: .5rem; flex-wrap: wrap;">
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/-JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="  https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Bitbucket-0747a6?style=for-the-badge&logo=bitbucket&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" alt="jc_zmar" /></a>
+<a href="https://twitter.com/jc_zmar" target="blank"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="jc_zmar" /></a>
 </div>
-<div id="badges" align="left">
-  <h3>Redes Sociales</h3>
-  <a href="https://twitter.com/jc_zmar" targer="_blank">
-    <img align="left" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="40" height="40" />
-  </a>
-    <a href="https://www.instagram.com/karlrm_16/" targer="_blank">
-    <img align="left" src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="40" height="40" />
-  </a>
-    <a href="https://www.linkedin.com/in/jcarlosmariscal/" targer="_blank">
-    <img align="left" src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="Linkedin" width="40" height="40" />
-  </a>
-  <a href="https://jcarlosmariscal.netlify.app/" targer="_blank">
-    <img align="left" src="https://cdn-icons-png.flaticon.com/512/1150/1150626.png" alt="Web" width="40" height="40" />
-  </a>
+
+<h3 align="left">Mis estadísticas:</h3>
+<div style="display:flex; align-items:center; gap:.5rem; flex-wrap: wrap;">
+<img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=jcarlosmariscal&show_icons=true&locale=en&layout=compact" alt="jcarlosmariscal" />
+
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=jcarlosmariscal&show_icons=true&locale=en" alt="jcarlosmariscal" />
 </div>
-<br />
-<div id="tools">
-  <h3>Lenguajes:</h3>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg" width="50" height="50" alt="HTML5" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg" width="50" height="50" alt="CSS3" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg" width="50" height="50" alt="Javascript" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-plain.svg" width="50" height="50" alt="MySQL" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-plain.svg" width="50" height="50" alt="Git" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/php/php-plain.svg" width="50" height="50" alt="PHP" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/gitlab/gitlab-plain.svg" width="50" height="50" alt="GitLab" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg" width="50" height="50" alt="Bootstrap" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg" width="50" height="50" alt="Vue" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain.svg" width="50" height="50" alt="Firebase" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/xd/xd-plain.svg" width="50" height="50" alt="Adobe XD" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" width="50" height="50" alt="Sass" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg" width="50" height="50" alt="Tailwind" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-plain.svg" width="50" height="50" alt="NodeJS" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" width="50" height="50" alt="ReactJS" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/bitbucket/bitbucket-original.svg" width="50" height="50" alt="Bitbucket" />
-  <img src="https://github.com/devicons/devicon/blob/master/icons/slack/slack-original.svg" width="50" height="50" alt="Slack" />
-</div>
-
-### Mis estadísticas:
-
-[![Hi](https://github-readme-stats.vercel.app/api/top-langs/?username=jcarlosmariscal&theme="tokyonight")](https://github.com/anuraghazra/github-readme-stats)
-
-<!---
-jcarlosMariscal/jcarlosMariscal is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-
-<!-- # jcarlosmariscal
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/). -->

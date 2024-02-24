@@ -39,7 +39,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 import ButtonHeader from "./pure/ButtonHeader.vue";
 type TNavigation = {
   title: string;
@@ -56,10 +56,20 @@ const mobileNavbar = ref(false);
 const theme = ref<"light" | "dark">("light");
 const darkMode = ref(false);
 
+const updateTheme = (value: string) => {
+  darkMode.value = value === "light" ? false : true;
+  document.documentElement.setAttribute("data-theme", value);
+};
+onMounted(() => {
+  const localTheme = localStorage.getItem("theme");
+  theme.value = localTheme === "light" ? "light" : "dark";
+  updateTheme(theme.value);
+});
+
 const changeTheme = () => {
   theme.value = theme.value === "light" ? "dark" : "light";
-  darkMode.value = theme.value === "light" ? false : true;
-  document.documentElement.setAttribute("data-theme", theme.value);
+  localStorage.setItem("theme", theme.value);
+  updateTheme(theme.value);
 };
 const navbarMobile = () => (mobileNavbar.value = !mobileNavbar.value);
 const handleClick = () => (mobileNavbar.value = false);

@@ -51,10 +51,8 @@ const socials: TSocial[] = [
   transition: all 0.3s ease-in;
 }
 .social__networks .network:hover {
-  background: var(--gradient-background);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in;
+  color: var(--color-primary);
+  transition: all 0.1s ease-in;
 }
 .resume__social {
   margin: 1.5rem 0;

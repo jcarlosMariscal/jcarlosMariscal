@@ -86,7 +86,7 @@ const Toast = Swal.mixin({
     toast.addEventListener("mouseleave", Swal.resumeTimer);
   },
 });
-const msgToast = async (status) => {
+const msgToast = async (status: string) => {
   await Toast.fire({
     icon: status,
     title:
@@ -124,7 +124,7 @@ const sendEmail = async () => {
 </script>
 
 <style scoped>
-.contact__form .form {
+.form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -201,8 +201,9 @@ const sendEmail = async () => {
 }
 
 .form__btn {
-  text-align: center;
-  width: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 html .form__input2 {

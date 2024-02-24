@@ -145,10 +145,8 @@ const prop = defineProps({
   transition: all 0.2s ease-in;
 }
 .card__details .card__detail-options .option a:hover {
-  background: var(--gradient-background);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.2s ease-in;
+  color: var(--color-primary);
+  transition: all 0.1s ease-in;
 }
 </style>
 <!-- 421 -->

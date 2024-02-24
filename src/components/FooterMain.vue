@@ -4,7 +4,7 @@
       <SocialNetworks />
     </div>
     <div class="footer__copyright">
-      <p>Copyright © 2023 <a href="">Carlos Mariscal</a></p>
+      <p>Copyright © 2024 <a href="">Carlos Mariscal</a></p>
     </div>
   </div>
 </template>
@@ -41,14 +41,9 @@ import SocialNetworks from "./HomeComponents/SocialNetworks.vue";
   font-size: 1rem;
 }
 .footer__copyright p a {
-  background: var(--gradient-background);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-primary);
 }
 .footer__copyright p a:hover {
-  background: transparent;
-  color: var(--color-text) !important;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
+  color: var(--color-secondary);
 }
 </style>

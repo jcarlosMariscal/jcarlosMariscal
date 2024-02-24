@@ -30,7 +30,7 @@ import FormComponent from "@/components/ContactComponents/FormComponent.vue";
 /* CONTACT */
 .contact__form {
   color: var(--color-text);
-  width: 50%;
+  width: 70%;
   margin: 1px auto;
   padding: 0 0.5rem;
 }

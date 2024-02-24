@@ -61,6 +61,8 @@ import FooterMain from "./components/FooterMain.vue";
   );
 }
 .btn-send {
+  /* text-align: center; */
+  width: 70%;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
   background-image: linear-gradient(
@@ -105,5 +107,10 @@ import FooterMain from "./components/FooterMain.vue";
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--color-secondary);
+}
+@media screen and (max-width: 650px) {
+  .btn-send {
+    width: 100% !important;
+  }
 }
 </style>
