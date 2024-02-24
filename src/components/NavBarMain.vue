@@ -31,6 +31,7 @@
           v-for="(nav, index) in navigation"
           :key="index"
           :nav="nav"
+          @click="handleClick"
         />
       </ul>
     </div>
@@ -61,6 +62,7 @@ const changeTheme = () => {
   document.documentElement.setAttribute("data-theme", theme.value);
 };
 const navbarMobile = () => (mobileNavbar.value = !mobileNavbar.value);
+const handleClick = () => (mobileNavbar.value = false);
 </script>
 <style scoped>
 .navbar {
@@ -71,7 +73,7 @@ const navbarMobile = () => (mobileNavbar.value = !mobileNavbar.value);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--navbar-bg);
+  background-color: var(--color-bg);
   z-index: 999;
 }
 .navbar .navbar__resume {
@@ -144,9 +146,10 @@ const navbarMobile = () => (mobileNavbar.value = !mobileNavbar.value);
     position: absolute;
     top: 0;
     left: -1rem;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.04);
+    /* background: rgba(0, 0, 0, 0.6); */
+    background: var(--color-bg);
     transform: translateX(-105%);
     transition: transform 0.3s ease-in;
     z-index: 25 !important;

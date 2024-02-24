@@ -54,5 +54,15 @@ const toggleContent = (card: Card) => {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+@media screen and (max-width: 1300px) {
+  .content__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .content__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>
 <!-- 469 -->

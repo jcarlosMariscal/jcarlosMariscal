@@ -60,6 +60,17 @@ import FooterMain from "./components/FooterMain.vue";
     var(--color-secondary)
   );
 }
+.btn-send {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  background-image: linear-gradient(
+    to left,
+    transparent,
+    transparent 50%,
+    var(--color-primary) 50%,
+    var(--color-primary)
+  );
+}
 @media screen and (max-width: 900px) {
   .container {
     margin: 1rem 1.5rem;
@@ -67,11 +78,13 @@ import FooterMain from "./components/FooterMain.vue";
 }
 .my-toast-popup {
   background-color: var(
-    --color-bg
+    --color-primary
   ) !important; /* Cambia el color de fondo que desees */
 }
 
 .my-toast-title {
+  font-weight: normal;
+  font-size: 0.9rem !important;
   color: var(
     --color-text
   ) !important; /* Cambia el color del texto que desees */

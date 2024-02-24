@@ -26,7 +26,9 @@ const prop = defineProps({
 <style scoped>
 .card {
   width: 150px;
+  /* width: 100%; */
   height: 75px;
+  /* padding: 0 0.2rem; */
   transition: transform 0.2s ease-in;
   background: var(--color-bg-second);
   border-radius: 0.3rem;
@@ -61,6 +63,12 @@ const prop = defineProps({
   }
   100% {
     border: 1px solid transparent;
+  }
+}
+@media screen and (max-width: 540px) {
+  .card {
+    width: 100px;
+    flex-direction: column;
   }
 }
 </style>
