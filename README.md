@@ -3,7 +3,7 @@ const jc = {
   name: "Jeje"
 }
 ``` -->
-<img src="banner-readme.png" alt="Banner Readme" />
+<img src="banner-readme.gif" alt="Banner Readme" />
 <h1 align="left">Hola, Yo soy Juan Carlos Ramírez Mariscal <img style="transform:rotateY(180deg)" src="https://private-user-images.githubusercontent.com/74038190/238201075-34376b0e-4ae2-4278-9d3d-82e8016a87d6.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg3NTIxODAsIm5iZiI6MTcwODc1MTg4MCwicGF0aCI6Ii83NDAzODE5MC8yMzgyMDEwNzUtMzQzNzZiMGUtNGFlMi00Mjc4LTlkM2QtODJlODAxNmE4N2Q2LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjI0VDA1MTgwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1NjZmNmQ1ZTkzNTY0NWMzYzhkY2NiODhjODdkMTZmZTllMzgwNzRkOWFiNzkyMWU1OTNjOTg1OTE1NzUyZGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.8QnniWIn791GUWpO9TFI30LqH2UkBCbiTwgUCIMLJsE" width="80" /></h1>
 <h4 align="justify">Hola, soy desarrollador web. Me apasiona la tecnología y estoy en constante aprendizaje sobre las últimas tendencias.</h4>
 
