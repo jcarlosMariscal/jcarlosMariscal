@@ -5,11 +5,11 @@
   --color-dark: #141414;
   --color-bg-second: rgb(229 231 235);
   --color-primary: rgb(2 132 199); /* sky - tailwind */
-  --color-secondary: rgb(79 70 229); /* indigo - tailwind */
+  --color-secondary: #4f46e5; /* indigo - tailwind */
   --font-family: "Poppins", sans-serif;
 }
 [data-theme="dark"] {
-  --color-bg: rgb(2 6 23) !important;
+  --color-bg: #020617 !important;
   --color-text: rgb(241 245 249) !important;
   --color-white: rgb(241 245 249);
   --color-dark: #141414 !important;

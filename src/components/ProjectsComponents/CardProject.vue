@@ -16,7 +16,13 @@
       </div>
       <div class="card__detail-options">
         <div class="option" v-for="(link, i) in prop.card.links" :key="i">
-          <a :href="link.url" :title="link.name" v-html="link.icon"></a>
+          <a
+            :href="link.url"
+            :title="link.name"
+            v-html="link.icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
         </div>
       </div>
     </div>
