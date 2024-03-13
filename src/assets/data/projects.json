@@ -1,9 +1,9 @@
 [
   {
-    "title": "Apga Bliss",
-    "description": "Sitio web para mostrar información de los precios y especialidades de una pizzería. Permite personalizar los precios, promociones, especialidades, etc. mediante un CRUD de forma rápida y sencilla.",
+    "title": "Gestor de Gastos",
+    "description": "Sitio para gestionar los gastos e ingresos de una persona.",
     "image": "apga-bliss.avif",
-    "date": "- Agosto 2023",
+    "date": "- Marzo 2024",
     "links": [],
     "technologies": [
       { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
@@ -16,21 +16,25 @@
   },
   {
     "title": "Clon Epic Games Store",
-    "description": "Sitio web para mostrar información de los precios y especialidades de una pizzería. Permite personalizar los precios, promociones, especialidades, etc. mediante un CRUD de forma rápida y sencilla.",
+    "description": "Clon de Epic Games Store: Proyecto realizado para hacer uso de tailwind CSS y hacer uso de react para clonar las interfaces de Epic Games Store.",
     "image": "clon-epicgames.png",
-    "date": "- Agosto 2023",
+    "date": "- Marzo 2024",
     "links": [
       {
         "name": "GitHub",
         "url": "https://github.com/jcarlosMariscal/epic-games-clone",
         "icon": "<i class='fa-brands fa-github'></i>"
+      },
+      {
+        "name": "Site",
+        "url": "https://epicgames-clone.netlify.app/",
+        "icon": "<i class='fa-solid fa-arrow-up-right-from-square'></i>"
       }
     ],
     "technologies": [
-      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
-      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
-      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
-      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+      { "name": "React", "icon": "<i class='bx bxl-react'></i>" },
+      { "name": "Tailwind", "icon": "<i class='bx bxl-tailwind-css'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" }
     ],
     "isActive": false,
     "developing": false

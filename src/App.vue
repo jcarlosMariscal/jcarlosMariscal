@@ -14,7 +14,7 @@ import FooterMain from "./components/FooterMain.vue";
 @import "assets/css/style.css";
 .container {
   height: auto;
-  margin: 1rem 10rem;
+  margin: 1rem 8rem;
 }
 .btn {
   color: var(--color-text);
