@@ -1,8 +1,11 @@
 <template>
   <li class="menu__option">
-    <router-link :to="props.nav.to" class="header-anim item draw">{{
-      props.nav.title
-    }}</router-link>
+    <router-link
+      :to="props.nav.to"
+      class="header-anim item"
+      activeClass="item-active"
+      >{{ props.nav.title }}</router-link
+    >
   </li>
 </template>
 
@@ -24,7 +27,7 @@ const props = defineProps({
 <style scoped>
 .menu__option .item {
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   padding: 0 0.3rem;
   display: flex;
   align-items: center;
@@ -40,6 +43,10 @@ const props = defineProps({
 }
 .menu__option .item:hover {
   color: var(--color-primary);
+  /* border-bottom: 1px solid var(--color-primary); */
+}
+.item-active {
+  color: var(--color-primary) !important;
   /* border-bottom: 1px solid var(--color-primary); */
 }
 @media screen and (max-width: 500px) {
