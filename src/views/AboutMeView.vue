@@ -3,7 +3,6 @@
     <!-- <div class="content-name"><h3>Sobre Mí</h3></div> -->
     <div class="content__information">
       <div class="information-text">
-        <h4>Hola, soy Juan Carlos. Encantado de conocerte.</h4>
         <p>
           Soy Ing. en Desarrollo y Gestión de Software, actualmente me
           desenvuelvo como desarrollador web y tengo experiencia de 2 años en
@@ -57,18 +56,18 @@ import avatar from "@/assets/about-avatar.png";
 
 <style scoped>
 .aboutMe__content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1rem; */
 }
 
 .content__information {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .content__information .information-text {
   color: var(--color-text);
@@ -78,7 +77,7 @@ import avatar from "@/assets/about-avatar.png";
   line-height: 2.5rem;
 }
 .content__information .information-text p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   margin: 1rem 0;
   font-weight: normal !important;

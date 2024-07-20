@@ -1,20 +1,136 @@
 <template>
-  <NavBarMain />
-  <div class="container">
-    <router-view />
+  <div class="content">
+    <NavBarMain />
+    <div class="container">
+      <div class="container-resume">
+        <span class="resume-name">Carlos Mariscal</span>
+        <span>-</span>
+        <span class="resume-rol">Web Developer</span>
+      </div>
+      <div class="container-section">
+        <router-view />
+      </div>
+    </div>
+    <div class="content-theme">
+      <button type="button" class="theme-btn" @click.prevent="changeTheme">
+        <i class="bx" :class="{ 'bx-sun': darkMode, 'bx-moon': !darkMode }"></i>
+        <span class="theme-btn-text">{{ darkMode ? "Light" : "Dark" }}</span>
+      </button>
+    </div>
+    <div class="content-footer">
+      <p>Copyright © 2024 <a href="">Carlos Mariscal</a></p>
+    </div>
   </div>
-  <FooterMain />
 </template>
 <script setup lang="ts">
+import { onMounted, ref } from "vue";
 import NavBarMain from "./components/NavBarMain.vue";
-import FooterMain from "./components/FooterMain.vue";
+// import FooterMain from "./components/FooterMain.vue";
+const theme = ref<"light" | "dark">("light");
+const darkMode = ref(false);
+const changeTheme = () => {
+  theme.value = theme.value === "light" ? "dark" : "light";
+  localStorage.setItem("theme", theme.value);
+  updateTheme(theme.value);
+};
+
+const updateTheme = (value: string) => {
+  darkMode.value = value === "light" ? false : true;
+  document.documentElement.setAttribute("data-theme", value);
+};
+onMounted(() => {
+  const localTheme = localStorage.getItem("theme");
+  theme.value = localTheme === "light" ? "light" : "dark";
+  updateTheme(theme.value);
+});
 </script>
 <style>
 @import "assets/css/theme.css";
 @import "assets/css/style.css";
+.content {
+  /* background: pink; */
+  display: flex;
+  position: relative;
+}
+.content-theme {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 2rem;
+  margin-bottom: 0.4rem;
+  /* background: orange; */
+}
+.content-theme .theme-btn {
+  color: var(--color-text) !important;
+  background: transparent;
+  /* width: 1.8rem; */
+  /* height: 1.8rem; */
+  font-size: 1.3rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.theme-btn-text {
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+}
+.content-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 11rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  /* background: orange; */
+  color: var(--color-text);
+}
+.content-footer p a {
+  color: var(--color-primary);
+}
+.content-footer p a:hover {
+  color: var(--color-secondary);
+}
 .container {
-  height: auto;
-  margin: 1rem 8rem;
+  /* min-height: 50rem; */
+  /* max-height: 50rem; */
+  height: calc(100vh - 4.1rem);
+  width: 100%;
+  margin: 1.5rem;
+  /* background: yellow; */
+  /* padding: 1.5rem; */
+  border: 1px solid var(--color-border);
+  overflow: auto;
+  overflow: -moz-scrollbars-none; /* Para navegadores basados en Mozilla */
+  -ms-overflow-style: none; /* Para Internet Explorer y Edge */
+  /* -ms-overflow-style: none; */
+  /* background: green; */
+}
+.container::-webkit-scrollbar {
+  display: none; /* Para navegadores basados en WebKit como Chrome y Safari */
+}
+
+.container-resume {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: sticky;
+  top: 0;
+  /* width: 100%; */
+  /* background: blue; */
+  background: var(--color-bg);
+  color: var(--color-text);
+  opacity: 0.95;
+  padding: 0.5rem 1.5rem;
+
+  z-index: 500;
+}
+.resume-name {
+  font-size: 2rem;
+}
+.container-section {
+  padding: 1rem 1.5rem;
 }
 .btn {
   color: var(--color-text);

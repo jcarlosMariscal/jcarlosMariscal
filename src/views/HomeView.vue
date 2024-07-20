@@ -2,10 +2,10 @@
   <div class="main__content">
     <AvatarComponent :avatar1="avatar1" :avatar2="avatar2" :animate="true" />
     <div class="main__content-resume">
-      <h1 class="resume__title">
+      <!-- <h1 class="resume__title">
         !Hola! Soy <span class="title-name">Juan Carlos</span>, Desarrollador
         Web.
-      </h1>
+      </h1> -->
       <p class="resume__description">
         Soy Ing. en Desarrollo y Gestión de Software, con actual enfoque en
         desarrollo web. Me apasiona la tecnología y el desarrollo, y estoy

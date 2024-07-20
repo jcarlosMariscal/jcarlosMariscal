@@ -1,20 +1,22 @@
 :root {
-  --color-bg: rgb(241 245 249);
-  --color-text: #141414;
-  --color-white: rgb(241 245 249);
-  --color-dark: #141414;
-  --color-bg-second: rgb(229 231 235);
+  --color-bg: #eeefff;
+  --color-text: #111110;
+  --color-white: #eeefff;
+  --color-dark: #111110;
+  --color-bg-second: #dddeee;
   --color-primary: rgb(2 132 199); /* sky - tailwind */
   --color-secondary: #4f46e5; /* indigo - tailwind */
+  --color-border: #666666;
   --font-family: "Poppins", sans-serif;
 }
 [data-theme="dark"] {
-  --color-bg: #020617 !important;
-  --color-text: rgb(241 245 249) !important;
-  --color-white: rgb(241 245 249);
-  --color-dark: #141414 !important;
-  --color-bg-second: rgb(15 23 42) !important;
+  --color-bg: #111110 !important;
+  --color-text: #eeefff !important;
+  --color-white: #eeefff;
+  --color-dark: #111110 !important;
+  --color-bg-second: #222221 !important;
   --color-primary: rgb(56 189 248);
   --color-secondary: rgb(129 140 248);
+  --color-border: #ccc;
   --font-family: "Poppins", sans-serif;
 }

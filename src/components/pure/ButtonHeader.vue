@@ -23,15 +23,18 @@ const props = defineProps({
 
 <style scoped>
 .menu__option .item {
+  text-align: center;
+  width: 100%;
   padding: 0 0.3rem;
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  justify-content: right;
+  font-size: 0.9rem;
+  font-weight: 600;
   line-height: 24px;
   transition: all 0.1s ease-in;
   padding: 0.5rem 0.2rem;
   color: var(--color-text);
-  font-weight: 500 !important;
   /* background-color: aqua; */
   /* border: 1px solid red; */
 }

@@ -4,14 +4,6 @@
       <div class="navbar__resume-profile">
         <p class="profile-icon">JC</p>
       </div>
-      <div class="navbar-theme">
-        <button type="button" class="theme-btn" @click.prevent="changeTheme">
-          <i
-            class="bx"
-            :class="{ 'bx-sun': darkMode, 'bx-moon': !darkMode }"
-          ></i>
-        </button>
-      </div>
     </div>
     <div class="navbar__menu-mobile">
       <button
@@ -39,7 +31,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 import ButtonHeader from "./pure/ButtonHeader.vue";
 type TNavigation = {
   title: string;
@@ -53,51 +45,39 @@ const navigation: TNavigation[] = [
   { title: "Contacto", to: "/contact" },
 ];
 const mobileNavbar = ref(false);
-const theme = ref<"light" | "dark">("light");
-const darkMode = ref(false);
 
-const updateTheme = (value: string) => {
-  darkMode.value = value === "light" ? false : true;
-  document.documentElement.setAttribute("data-theme", value);
-};
-onMounted(() => {
-  const localTheme = localStorage.getItem("theme");
-  theme.value = localTheme === "light" ? "light" : "dark";
-  updateTheme(theme.value);
-});
-
-const changeTheme = () => {
-  theme.value = theme.value === "light" ? "dark" : "light";
-  localStorage.setItem("theme", theme.value);
-  updateTheme(theme.value);
-};
 const navbarMobile = () => (mobileNavbar.value = !mobileNavbar.value);
 const handleClick = () => (mobileNavbar.value = false);
 </script>
 <style scoped>
 .navbar {
-  width: 100%;
-  height: 4rem;
-  position: sticky;
-  top: 0;
+  width: 10rem;
+  height: calc(100vh - 1.5rem);
+  /* position: sticky; */
+  /* top: 0; */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
   background-color: var(--color-bg);
+  padding-top: 1.5rem;
   z-index: 999;
 }
 .navbar .navbar__resume {
   color: var(--color-text) !important;
-  display: flex;
-  align-items: center;
-  gap: 0.1rem;
-  margin-left: 2rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-items: right; */
+  /* align-items: left; */
+  text-align: right;
+  /* gap: 0.1rem; */
+  /* margin-left: 2rem; */
+  /* background: purple; */
 }
 .navbar__resume-profile {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
 }
 .navbar__resume-profile .profile-icon {
   background: var(--color-text);
@@ -109,7 +89,7 @@ const handleClick = () => (mobileNavbar.value = false);
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  border-radius: 50%;
+  border-radius: 0.5rem;
 }
 .navbar-theme .theme-btn {
   color: var(--color-text) !important;
@@ -126,12 +106,10 @@ const handleClick = () => (mobileNavbar.value = false);
 .navbar__menu-mobile {
   display: none;
 }
-.navbar__menu {
-  margin: 0 2rem;
-}
 .navbar__menu-options {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  /* gap: 2rem; */
 }
 @media screen and (max-width: 800px) {
   .navbar__menu-mobile {
