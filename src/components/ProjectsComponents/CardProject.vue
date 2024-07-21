@@ -57,7 +57,7 @@ const prop = defineProps({
 .card .card__main {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 160px;
   border-radius: 0.3rem;
 }
 .card .card__main img {

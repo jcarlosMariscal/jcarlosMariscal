@@ -15,6 +15,27 @@
     "developing": true
   },
   {
+    "title": "CC-IOD Technologies",
+    "description": "Sitio para llevar el proceso de los clientes, pasando su información relevante.",
+    "image": "cciod-technologies.avif",
+    "date": "- Julio 2024",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/jcarlosMariscal/CC-IOD-Technologies-Frontend",
+        "icon": "<i class='fa-brands fa-github'></i>"
+      }
+    ],
+    "technologies": [
+      { "name": "Vue", "icon": "<i class='bx bxl-vuejs'></i>" },
+      { "name": "HTML5", "icon": "<i class='bx bxl-html5'></i>" },
+      { "name": "CSS3", "icon": "<i class='bx bxl-css3' ></i>" },
+      { "name": "Firebase", "icon": "<i class='bx bxl-firebase'></i>" }
+    ],
+    "isActive": true,
+    "developing": false
+  },
+  {
     "title": "Clon Epic Games Store",
     "description": "Clon de Epic Games Store: Proyecto realizado para hacer uso de tailwind CSS y hacer uso de react para clonar las interfaces de Epic Games Store.",
     "image": "clon-epicgames.png",

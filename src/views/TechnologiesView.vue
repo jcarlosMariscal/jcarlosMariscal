@@ -44,12 +44,15 @@ import firebase from "@/assets/tech-icons/firebase.png";
 import vscode from "@/assets/tech-icons/vscode.png";
 import slack from "@/assets/tech-icons/slack.png";
 import bitbucket from "@/assets/tech-icons/bitbucket.png";
+import azure from "@/assets/tech-icons/azure.png";
+import typescript from "@/assets/tech-icons/typescript.png";
 const techs = [
   // <img src="../../assets/tech-icons/html5.png" alt="" />
   { title: "HTML", icon: html5Icon },
   { title: "CSS", icon: css },
   { title: "SASS", icon: sass },
   { title: "Javascript", icon: javascript },
+  { title: "Typescript", icon: typescript },
   { title: "Vue JS", icon: vue },
   { title: "React JS", icon: react },
   { title: "Tailwind", icon: tailwind },
@@ -67,6 +70,7 @@ const tools = [
   { title: "VS Code", icon: vscode },
   { title: "Slack", icon: slack },
   { title: "Bitbucket", icon: bitbucket },
+  { title: "Azure", icon: azure },
 ];
 </script>
 
@@ -82,7 +86,7 @@ const tools = [
 .cards {
   color: var(--color-text);
   height: auto;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   width: 100% !important;
   display: flex;
   align-items: center;

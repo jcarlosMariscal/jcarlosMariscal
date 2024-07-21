@@ -4,10 +4,10 @@
   --color-white: #eeefff;
   --color-dark: #111110;
   --color-bg-second: #dddeee;
-  --color-primary: rgb(2 132 199); /* sky - tailwind */
-  --color-secondary: #4f46e5; /* indigo - tailwind */
+  --color-primary: #10b981;
+  --color-secondary: rgb(2 132 199);
   --color-border: #666666;
-  --font-family: "Poppins", sans-serif;
+  font-family: "Comic Neue", cursive;
 }
 [data-theme="dark"] {
   --color-bg: #111110 !important;
@@ -15,8 +15,8 @@
   --color-white: #eeefff;
   --color-dark: #111110 !important;
   --color-bg-second: #222221 !important;
-  --color-primary: rgb(56 189 248);
-  --color-secondary: rgb(129 140 248);
+  --color-primary: #10b981;
+  --color-secondary: rgb(2 132 199);
   --color-border: #ccc;
-  --font-family: "Poppins", sans-serif;
+  font-family: "Comic Neue", cursive;
 }

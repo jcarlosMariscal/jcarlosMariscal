@@ -3,7 +3,7 @@
     href="#contacto"
     :to="to"
     :download="download"
-    class="btn btn-anim"
+    class="btn"
     :class="className"
     >{{ props.text }}
   </a>

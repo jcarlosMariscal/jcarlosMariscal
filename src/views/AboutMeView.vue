@@ -56,11 +56,7 @@ import avatar from "@/assets/about-avatar.png";
 
 <style scoped>
 .aboutMe__content {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem; */
+  padding: 0 1rem;
 }
 
 .content__information {
@@ -77,7 +73,7 @@ import avatar from "@/assets/about-avatar.png";
   line-height: 2.5rem;
 }
 .content__information .information-text p {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   line-height: 1.5rem;
   margin: 1rem 0;
   font-weight: normal !important;

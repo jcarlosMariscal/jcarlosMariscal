@@ -25,7 +25,7 @@ const prop = defineProps({
 
 <style scoped>
 .card {
-  width: 150px;
+  width: 100px;
   /* width: 100%; */
   height: 75px;
   /* padding: 0 0.2rem; */
@@ -33,6 +33,7 @@ const prop = defineProps({
   background: var(--color-bg-second);
   border-radius: 0.3rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;

@@ -4,8 +4,9 @@
       :to="props.nav.to"
       class="header-anim item"
       activeClass="item-active"
-      >{{ props.nav.title }}</router-link
     >
+      <span>{{ props.nav.title }}</span>
+    </router-link>
   </li>
 </template>
 
@@ -32,7 +33,6 @@ const props = defineProps({
   display: flex;
   align-items: center;
   justify-content: right;
-  font-size: 0.9rem;
   font-weight: 600;
   line-height: 24px;
   transition: all 0.1s ease-in;
@@ -46,8 +46,24 @@ const props = defineProps({
   /* border-bottom: 1px solid var(--color-primary); */
 }
 .item-active {
-  color: var(--color-primary) !important;
+  /* color: var(--color-primary) !important; */
   /* border-bottom: 1px solid var(--color-primary); */
+}
+.item-active span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-active span::before {
+  content: "";
+  position: absolute;
+  left: -0.75rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-text);
+  margin-bottom: 0.1rem;
 }
 @media screen and (max-width: 500px) {
   .menu__option .item {

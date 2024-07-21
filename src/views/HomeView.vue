@@ -2,17 +2,12 @@
   <div class="main__content">
     <AvatarComponent :avatar1="avatar1" :avatar2="avatar2" :animate="true" />
     <div class="main__content-resume">
-      <!-- <h1 class="resume__title">
-        !Hola! Soy <span class="title-name">Juan Carlos</span>, Desarrollador
-        Web.
-      </h1> -->
       <p class="resume__description">
         Soy Ing. en Desarrollo y Gestión de Software, con actual enfoque en
         desarrollo web. Me apasiona la tecnología y el desarrollo, y estoy
         constantemente aprendiendo sobre las últimas tendencias. Me interesa
         contribuir en proyectos innovadores y seguir creciendo profesionalmente.
       </p>
-      <SocialNetworks />
       <div class="resume__btns">
         <LinkComponent text="Contáctame" className="btn-contact" />
         <LinkComponent
@@ -42,6 +37,7 @@ import avatar2 from "@/assets/greeting-avatar2.png";
   align-items: center;
   gap: 1rem;
   padding: 0 1rem;
+  width: 45%;
 }
 
 .main__content-resume {

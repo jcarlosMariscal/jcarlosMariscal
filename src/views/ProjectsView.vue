@@ -51,7 +51,7 @@ const toggleContent = (card: Card) => {
 .content__cards {
   /* background: aqua; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
 }
 @media screen and (max-width: 1300px) {

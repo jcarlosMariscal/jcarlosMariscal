@@ -219,16 +219,17 @@ html .form__input2 {
   width: 12rem;
 }
 html .form__input2 {
-  border: 2px solid var(--color-text);
+  border: 1px solid var(--color-text);
+  background: transparent;
 }
 html .form__input2:focus {
   outline: none;
   border: none;
-  background: rgba(48, 48, 48, 0.2);
+  background: rgba(48, 48, 48, 0.1);
   border-radius: 0% !important;
   border-top-left-radius: 0.3rem !important;
   border-top-right-radius: 0.3rem !important;
-  border-bottom: 2px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary);
 }
 html .form__input2:focus + .form__label2,
 html .form__input2:not(:placeholder-shown) + .form__label2 {
@@ -237,8 +238,6 @@ html .form__input2:not(:placeholder-shown) + .form__label2 {
   color: var(--color-white);
   border-radius: 0.1rem;
   font-weight: normal;
-
-  /* padding: 0.1rem 0.3rem; */
   margin: 0 1rem;
   display: flex;
   align-items: center;

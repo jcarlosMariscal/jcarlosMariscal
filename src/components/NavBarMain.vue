@@ -51,28 +51,17 @@ const handleClick = () => (mobileNavbar.value = false);
 </script>
 <style scoped>
 .navbar {
-  width: 10rem;
-  height: calc(100vh - 1.5rem);
-  /* position: sticky; */
-  /* top: 0; */
+  min-width: 7rem;
+  height: calc(100vh - 2rem);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: space-between; */
   background-color: var(--color-bg);
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   z-index: 999;
 }
 .navbar .navbar__resume {
   color: var(--color-text) !important;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-items: right; */
-  /* align-items: left; */
   text-align: right;
-  /* gap: 0.1rem; */
-  /* margin-left: 2rem; */
-  /* background: purple; */
 }
 .navbar__resume-profile {
   width: 100%;
@@ -90,6 +79,7 @@ const handleClick = () => (mobileNavbar.value = false);
   justify-content: center;
   font-size: 1.5rem;
   border-radius: 0.5rem;
+  font-weight: bold;
 }
 .navbar-theme .theme-btn {
   color: var(--color-text) !important;
@@ -109,7 +99,6 @@ const handleClick = () => (mobileNavbar.value = false);
 .navbar__menu-options {
   display: flex;
   flex-direction: column;
-  /* gap: 2rem; */
 }
 @media screen and (max-width: 800px) {
   .navbar__menu-mobile {
