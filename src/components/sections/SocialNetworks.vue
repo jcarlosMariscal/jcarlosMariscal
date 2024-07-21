@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="resume__social"></div> -->
   <div class="social__networks">
     <a
       v-for="(social, index) in socials"
@@ -35,7 +34,6 @@ const socials: TSocial[] = [
 
 <style scoped>
 .social__networks {
-  /* width: 100%; */
   display: flex;
   align-items: center;
   gap: 1rem;

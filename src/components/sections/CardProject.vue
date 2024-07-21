@@ -124,11 +124,9 @@ const prop = defineProps({
   }
 }
 .card.show .card__main {
-  /* transform: scale(); */
   transition: transform 0.2s ease-in;
 }
 .card__details {
-  /* background: yellow; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -155,4 +153,3 @@ const prop = defineProps({
   transition: all 0.1s ease-in;
 }
 </style>
-<!-- 421 -->

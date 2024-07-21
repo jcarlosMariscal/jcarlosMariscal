@@ -1,6 +1,5 @@
 <template>
   <div class="aboutMe__content">
-    <!-- <div class="content-name"><h3>Sobre Mí</h3></div> -->
     <div class="content__information">
       <div class="information-text">
         <p>
@@ -58,12 +57,10 @@ import avatar from "@/assets/about-avatar.png";
 .aboutMe__content {
   padding: 0 1rem;
 }
-
 .content__information {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* padding: 1rem; */
 }
 .content__information .information-text {
   color: var(--color-text);
@@ -73,7 +70,6 @@ import avatar from "@/assets/about-avatar.png";
   line-height: 2.5rem;
 }
 .content__information .information-text p {
-  /* font-size: 0.9rem; */
   line-height: 1.5rem;
   margin: 1rem 0;
   font-weight: normal !important;
@@ -98,14 +94,7 @@ span.learning {
 }
 @media screen and (max-width: 1000px) {
   .content__information {
-    /* display: flex !important;
-    flex-direction: column !important;
-    align-items: center;
-    justify-content: center; */
     padding: 0 !important;
-  }
-  .content__information .information-text {
-    /* width: 95%; */
   }
 }
 @media screen and (max-width: 800px) {
@@ -124,7 +113,6 @@ span.learning {
 @media screen and (max-width: 550px) {
   .content__information .information-avatar {
     margin-top: 2rem;
-    /* width: 90%; */
   }
 }
 </style>

@@ -1,8 +1,6 @@
 <template>
   <div class="projects__content">
     <div class="content__cards">
-      <!-- <ProjectsComponent -->
-      <!-- <CardProject -->
       <CardProject
         v-for="(card, index) in cards"
         :key="index"
@@ -32,24 +30,16 @@ interface Card {
 
 const cards: Ref<Array<Card>> = ref([]);
 
-// console.log(cards);
-
 cards.value = data;
-const toggleContent = (card: Card) => {
-  console.log("recibiendo");
-
-  card.isActive = !card.isActive;
-};
+const toggleContent = (card: Card) => (card.isActive = !card.isActive);
 </script>
 
 <style scoped>
 .projects__content {
-  /* padding: 1rem; */
   display: flex;
   justify-content: center;
 }
 .content__cards {
-  /* background: aqua; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
@@ -65,4 +55,3 @@ const toggleContent = (card: Card) => {
   }
 }
 </style>
-<!-- 469 -->

@@ -137,8 +137,6 @@ const sendEmail = async () => {
 }
 .form__input label,
 .form__textarea label {
-  /* background: aqua; */
-  /* margin: 10px 10px 10px 0px; */
   font-weight: bold;
   color: var(--color-text);
   transition: all 0.5s ease-in;
@@ -153,7 +151,6 @@ const sendEmail = async () => {
   border: 0;
   margin: 1rem 0;
   padding: 1rem;
-  /* padding: 10px 10px 0px 10px; */
   border: 1px solid var(--color-text);
   border-radius: 0.3rem !important;
   outline: none;

@@ -47,7 +47,6 @@ import bitbucket from "@/assets/tech-icons/bitbucket.png";
 import azure from "@/assets/tech-icons/azure.png";
 import typescript from "@/assets/tech-icons/typescript.png";
 const techs = [
-  // <img src="../../assets/tech-icons/html5.png" alt="" />
   { title: "HTML", icon: html5Icon },
   { title: "CSS", icon: css },
   { title: "SASS", icon: sass },

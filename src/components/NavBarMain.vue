@@ -107,32 +107,17 @@ const handleClick = () => (mobileNavbar.value = false);
 }
 @media screen and (max-width: 800px) {
   .navbar {
-    /* width: 100%; */
     height: 2rem;
-    /* position: sticky; */
-    /* background: purple; */
-    /* flex-direction: row; */
     padding: 0;
-    /* height: calc(100vh - 2rem); */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* background-color: var(--color-bg); */
-    /* padding-top: 2rem; */
-    /* z-index: 999; */
   }
   .navbar__resume {
     display: none;
   }
   .navbar__menu-mobile {
-    /* display: block; */
-    /* height: 100%; */
-    /* width: 100%; */
-    /* top: 0; */
     padding: 0 1rem;
     z-index: 50 !important;
     display: flex;
     justify-content: space-between;
-    /* background: orange; */
   }
   .navbar__menu-mobile .profile-icon-menu {
     color: var(--color-text);
@@ -153,7 +138,6 @@ const handleClick = () => (mobileNavbar.value = false);
     left: -1rem;
     width: 50vw;
     height: 100vh;
-    /* background: rgba(0, 0, 0, 0.6); */
     background: var(--color-bg);
     transform: translateX(-105%);
     transition: transform 0.3s ease-in;
@@ -184,4 +168,3 @@ const handleClick = () => (mobileNavbar.value = false);
   }
 }
 </style>
-<!-- 288 -->

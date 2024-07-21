@@ -26,9 +26,7 @@ const prop = defineProps({
 <style scoped>
 .card {
   width: 100px;
-  /* width: 100%; */
   height: 75px;
-  /* padding: 0 0.2rem; */
   transition: transform 0.2s ease-in;
   background: var(--color-bg-second);
   border-radius: 0.3rem;
