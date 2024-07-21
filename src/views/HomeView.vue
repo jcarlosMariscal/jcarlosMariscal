@@ -23,7 +23,6 @@
 
 <script lang="ts" setup>
 import LinkComponent from "@/components/pure/LinkComponent.vue";
-import SocialNetworks from "@/components/HomeComponents/SocialNetworks.vue";
 import AvatarComponent from "@/components/pure/AvatarComponent.vue";
 
 import avatar1 from "@/assets/greeting-avatar.png";
@@ -79,6 +78,11 @@ import avatar2 from "@/assets/greeting-avatar2.png";
   }
   .resume__btns {
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main__content {
+    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {

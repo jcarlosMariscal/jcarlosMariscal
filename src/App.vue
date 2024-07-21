@@ -32,9 +32,9 @@
       </div>
       <div class="container-footer">
         <!-- <div class="container-footer"> -->
-        <div>
-          <p>Copyright © 2024 <a href="">Carlos Mariscal</a></p>
-        </div>
+        <!-- <div> -->
+        <p>Copyright © 2024 <a href="">Carlos Mariscal</a></p>
+        <!-- </div> -->
         <!-- </div> -->
         <SocialNetworks />
       </div>
@@ -44,7 +44,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import NavBarMain from "./components/NavBarMain.vue";
-import SocialNetworks from "./components/HomeComponents/SocialNetworks.vue";
+import SocialNetworks from "./components/sections/SocialNetworks.vue";
 const theme = ref<"light" | "dark">("light");
 const darkMode = ref(false);
 const changeTheme = () => {
@@ -69,6 +69,54 @@ onMounted(() => {
 .content {
   display: flex;
   position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .bg-gradient .bg1 {
+    position: absolute;
+    right: 4rem;
+    top: 16rem;
+  }
+  .bg-gradient .bg2 {
+    position: absolute;
+    right: 20rem;
+    top: 5rem;
+    z-index: inherit;
+  }
+  .bg-gradient .bg3 {
+    position: absolute;
+    right: 20rem !important;
+    bottom: 5rem !important;
+    z-index: inherit;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+  .container {
+    width: auto !important;
+    height: auto !important;
+  }
+  .container-header {
+    display: none !important;
+  }
+  .container-main {
+    height: auto !important;
+    margin: 0.5rem !important;
+  }
+  .bg-gradient {
+    display: none;
+  }
+  .container-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0 !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-main {
+    margin: 0.1rem !important;
+  }
 }
 .bg-gradient .bg1 {
   position: absolute;
@@ -95,7 +143,7 @@ onMounted(() => {
 .bg-gradient .bg2 {
   position: absolute;
   right: 20rem;
-  top: 5rem;
+  top: 7.5rem;
   z-index: inherit;
   background: linear-gradient(
     -45deg,

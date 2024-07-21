@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts" setup>
-import CardProject from "@/components/ProjectsComponents/CardProject.vue";
+import CardProject from "@/components/sections/CardProject.vue";
 import { Ref, ref } from "vue";
 import data from "@/assets/data/projects.json";
 

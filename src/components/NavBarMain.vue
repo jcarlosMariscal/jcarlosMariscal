@@ -16,6 +16,11 @@
           :class="{ 'bx-menu-alt-right': !mobileNavbar, 'bx-x': mobileNavbar }"
         ></i>
       </button>
+      <div class="container-resume">
+        <span class="resume-name">Carlos Mariscal</span>
+        <span>-</span>
+        <span class="resume-rol">Web Developer</span>
+      </div>
     </div>
     <div class="navbar__menu" :class="{ 'mobile-active': mobileNavbar }">
       <ul class="navbar__menu-options">
@@ -101,10 +106,33 @@ const handleClick = () => (mobileNavbar.value = false);
   flex-direction: column;
 }
 @media screen and (max-width: 800px) {
+  .navbar {
+    /* width: 100%; */
+    height: 2rem;
+    /* position: sticky; */
+    /* background: purple; */
+    /* flex-direction: row; */
+    padding: 0;
+    /* height: calc(100vh - 2rem); */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* background-color: var(--color-bg); */
+    /* padding-top: 2rem; */
+    /* z-index: 999; */
+  }
+  .navbar__resume {
+    display: none;
+  }
   .navbar__menu-mobile {
-    display: block;
-    margin: 0 1rem;
+    /* display: block; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* top: 0; */
+    padding: 0 1rem;
     z-index: 50 !important;
+    display: flex;
+    justify-content: space-between;
+    /* background: orange; */
   }
   .navbar__menu-mobile .profile-icon-menu {
     color: var(--color-text);

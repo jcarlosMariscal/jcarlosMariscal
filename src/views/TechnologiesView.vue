@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts" setup>
-import CardTechTool from "@/components/TechComponents/CardTechTool.vue";
+import CardTechTool from "@/components/sections/CardTechTool.vue";
 import html5Icon from "@/assets/tech-icons/html5.png";
 import css from "@/assets/tech-icons/css3.png";
 import sass from "@/assets/tech-icons/sass.png";

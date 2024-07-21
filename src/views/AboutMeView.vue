@@ -102,14 +102,15 @@ span.learning {
     flex-direction: column !important;
     align-items: center;
     justify-content: center; */
+    padding: 0 !important;
   }
   .content__information .information-text {
     /* width: 95%; */
   }
 }
 @media screen and (max-width: 800px) {
-  .content__information .information-avatar {
-    /* width: 60%; */
+  .aboutMe__content {
+    padding: 0;
   }
 }
 @media screen and (max-width: 700px) {
